@@ -1,0 +1,114 @@
+%<--- Settings for graphics --->%
+\usepackage{svg,graphicx,fancybox,letltxmacro}
+
+% save the meaning of \includegraphics
+\LetLtxMacro\latexincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+  \begin{center}
+	\latexincludegraphics[#1]{#2}
+  \end{center}}
+
+%<--- Settings for overall structure --->%
+\useoutertheme[subsection=false]{miniframes}
+\setmainfont{NewComputerModernSans10}
+
+\AtBeginSection[]{}
+\AtBeginSubsection[]{}
+
+\definecolor{ETH_Blau}{RGB}{33, 92, 175}
+\definecolor{ETH_Petrol}{RGB}{0, 120, 148}
+\definecolor{ETH_Grun}{RGB}{98, 115, 19}
+\definecolor{ETH_Bronze}{RGB}{142, 103, 19}
+\definecolor{ETH_Grau}{RGB}{111, 111, 111}
+\definecolor{ETH_Rot}{RGB}{183, 53, 45}
+\definecolor{ETH_Purpur}{RGB}{167, 17, 122}
+
+\setbeamercolor*{structure}{fg=ETH_Blau}
+\setbeamercolor{titlelike}{parent=structure,fg=ETH_Blau}
+\setbeamercolor{date in head/foot}{parent=structure,fg=ETH_Blau}
+
+\setbeamertemplate{mini frame in other section}[default][0]
+\setbeamertemplate{mini frame in other subsection}[default][0]
+
+%remove bg to see only in-frame
+\setbeamercolor*{mini frame}{fg=ETH_Purpur,bg=ETH_Grau}
+\setbeamercolor*{mini frame in section}{fg=ETH_Purpur,bg=ETH_Grau}
+
+\setbeamertemplate{section in head/foot}{\color{ETH_Purpur}\insertsectionhead}
+\setbeamertemplate{section in head/foot shaded}{\color{ETH_Grau}\insertsectionhead}
+
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[square]
+\setbeamertemplate{enumerate item}[circle]
+\setbeamertemplate{enumerate subitem}[square]
+
+\setbeamertemplate{right corner}{%
+%\insertshortdate{}\hspace*{2em}%
+\scriptsize{\insertframenumber{} / \inserttotalframenumber}%
+}
+
+\makeatletter
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=3ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\usebeamertemplate{right corner}\hspace*{2ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+
+
+%<--- Settings for code/quotes --->%
+
+\usepackage[listings,skins,breakable,xparse]{tcolorbox}
+\usepackage{fancyvrb,newverbs}
+
+\renewcommand{\lstinline}[1][]{%
+  \latexlstinline[basicstyle=\ttfamily\color{ETH_Grau},#1]%
+}
+
+\LetLtxMacro\latexlstinline\lstinline
+
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{
+  \colorbox{ETH_Grau}{\oldtexttt{#1}}
+}
+
+% redefine the 'quote' environment to use this 'myquote' environment
+\renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+\newtcolorbox{myquote}{colback=blue!3!white, colframe=blue!50!black}
+\newtcolorbox{myquote2}{colback=green!5!white, colframe=green!75!black}
+
+\lstdefinelanguage{ruby}
+{
+    columns=fullflexible,
+    keywordstyle=\color{red},
+    morekeywords={@prefix,@base,@forSome,@forAll,@keywords},
+    morecomment=[l]{\#},
+    tabsize=4,
+    alsoletter={-?}, % allowed in names
+    morecomment=[s][\color{blue}]{<}{>},
+    basicstyle=\ttfamily\color{black},
+    numberstyle=\tiny,
+    morestring=[b][\color{black}]\",
+    backgroundcolor=\color{ETH_Bronze},
+    rulecolor=\color{ETH_Petrol},
+}
+
+\lstdefinelanguage{bash}
+{
+    columns=fullflexible,
+    keywordstyle=\color{red},
+    morekeywords={@prefix,@base,@forSome,@forAll,@keywords},
+    morecomment=[l]{\#},
+    tabsize=4,
+    alsoletter={-?}, % allowed in names
+    morecomment=[s][\color{blue}]{<}{>},
+    basicstyle=\ttfamily\color{black},
+    numberstyle=\tiny,
+    morestring=[b][\color{black}]\",
+    backgroundcolor=\color{ETH_Bronze},
+    rulecolor=\color{ETH_Petrol},
+}
