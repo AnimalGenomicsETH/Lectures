@@ -130,7 +130,7 @@ $endif$
 \begin{document}
 $if(title)$
 \frame[plain,noframenumbering]{%
-\includesvg[width=2cm]{eth_logo_kurz_pos.svg}\hfill\includesvg[width=2cm]{eth_logo_kurz_pos.svg}
+\latexincludesvg[width=2cm]{eth_logo_kurz_pos.svg}\hfill\latexincludesvg[width=2cm]{eth_logo_kurz_pos.svg}
 \titlepage}
 $if(abstract)$
 \begin{abstract}

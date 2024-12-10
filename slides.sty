@@ -1,15 +1,26 @@
 %<--- Settings for graphics --->%
-\usepackage{svg,graphicx,fancybox,letltxmacro}
+\usepackage{graphicx,fancybox,letltxmacro}
+\usepackage[inkscapearea=nocrop]{svg}
 
 % save the meaning of \includegraphics
-\LetLtxMacro\latexincludegraphics\includegraphics
+\NewCommandCopy\latexincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{%
   \begin{center}
 	\latexincludegraphics[#1]{#2}
   \end{center}}
 
+\NewCommandCopy\latexincludesvg\includesvg
+  \renewcommand{\includesvg}[2][]{%
+    \begin{center}
+  	\latexincludesvg[#1]{#2}
+    \end{center}}
+
 %<--- Settings for overall structure --->%
+
+%\usepackage[T1]{fontenc}
+
 \useoutertheme[subsection=false]{miniframes}
+
 \setmainfont{NewComputerModernSans10}
 
 \AtBeginSection[]{}
@@ -22,6 +33,8 @@
 \definecolor{ETH_Grau}{RGB}{111, 111, 111}
 \definecolor{ETH_Rot}{RGB}{183, 53, 45}
 \definecolor{ETH_Purpur}{RGB}{167, 17, 122}
+
+\setbeamerfont{headline}{size=\scriptsize}
 
 \setbeamercolor*{structure}{fg=ETH_Blau}
 \setbeamercolor{titlelike}{parent=structure,fg=ETH_Blau}
@@ -58,6 +71,9 @@
 }
 \makeatother
 
+\renewcommand<>{\alert}[1]{\begin{alertenv}\underline{#2#1}\end{alertenv}}
+%\setbeamercolor{alerted text}{fg=ETH_Rot}
+
 
 
 %<--- Settings for code/quotes --->%
@@ -65,11 +81,10 @@
 \usepackage[listings,skins,breakable,xparse]{tcolorbox}
 \usepackage{fancyvrb,newverbs}
 
+\LetLtxMacro\latexlstinline\lstinline
 \renewcommand{\lstinline}[1][]{%
   \latexlstinline[basicstyle=\ttfamily\color{ETH_Grau},#1]%
 }
-
-\LetLtxMacro\latexlstinline\lstinline
 
 \let\oldtexttt\texttt
 \renewcommand{\texttt}[1]{
@@ -77,9 +92,28 @@
 }
 
 % redefine the 'quote' environment to use this 'myquote' environment
-\renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
-\newtcolorbox{myquote}{colback=blue!3!white, colframe=blue!50!black}
+\renewenvironment{quote}{\begin{myquote}\small}{\end{myquote}}
+\newtcolorbox{myquote}{colback=ETH_Petrol!3!white, colframe=ETH_Bronze}
 \newtcolorbox{myquote2}{colback=green!5!white, colframe=green!75!black}
+
+\tcbset{%
+    noparskip,
+    colback=gray!10, %background color of the box
+    colframe=gray!40, %color of frame and title background
+    coltext=black, %color of body text
+    coltitle=black, %color of title text
+    fonttitle=\bfseries,
+    alerted/.style={coltitle=red,
+                     colframe=gray!40},
+    example/.style={coltitle=black,
+                     colframe=green!20,
+                     colback=green!5},
+    }
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercolor{block body example}{bg=green!10}
+\setbeamercolor{block title example}{bg=green!20}
+
 
 \lstdefinelanguage{ruby}
 {
