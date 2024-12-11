@@ -16,12 +16,10 @@
     \end{center}}
 
 %<--- Settings for overall structure --->%
-
-%\usepackage[T1]{fontenc}
-
 \useoutertheme[subsection=false]{miniframes}
 
 \setmainfont{NewComputerModernSans10}
+\linespread{1.1}\selectfont
 
 \AtBeginSection[]{}
 \AtBeginSubsection[]{}
@@ -40,6 +38,8 @@
 \setbeamercolor{titlelike}{parent=structure,fg=ETH_Blau}
 \setbeamercolor{date in head/foot}{parent=structure,fg=ETH_Blau}
 
+
+
 \setbeamertemplate{mini frame in other section}[default][0]
 \setbeamertemplate{mini frame in other subsection}[default][0]
 
@@ -50,10 +50,13 @@
 \setbeamertemplate{section in head/foot}{\color{ETH_Purpur}\insertsectionhead}
 \setbeamertemplate{section in head/foot shaded}{\color{ETH_Grau}\insertsectionhead}
 
-\setbeamertemplate{itemize item}[circle]
-\setbeamertemplate{itemize subitem}[square]
-\setbeamertemplate{enumerate item}[circle]
-\setbeamertemplate{enumerate subitem}[square]
+\setbeamertemplate{itemize item}{\Large$\circ$}
+\setbeamertemplate{itemize subitem}{\tiny$\triangleright$}
+\setbeamertemplate{enumerate item}{\Large$\circ$}
+\setbeamertemplate{enumerate subitem}{\tiny$\triangleright$}
+
+\setbeamercolor{section in toc}{fg=ETH_Petrol}
+\setbeamercolor{subsection in toc}{fg=ETH_Petrol}
 
 \setbeamertemplate{right corner}{%
 %\insertshortdate{}\hspace*{2em}%
@@ -61,6 +64,7 @@
 }
 
 \makeatletter
+\beamer@centeredfalse
 \setbeamertemplate{footline}{
   \leavevmode%
   \hbox{%
@@ -74,6 +78,14 @@
 \renewcommand<>{\alert}[1]{\begin{alertenv}\underline{#2#1}\end{alertenv}}
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
+\hypersetup{
+  pdfauthor={Alexander Leonard},
+  colorlinks=true,
+  linkcolor={ETH_Rot},
+  filecolor={ETH_Rot},
+  citecolor={ETH_Petrol},
+  urlcolor={ETH_Petrol},
+  pdfcreator={LaTeX via pandoc}}
 
 
 %<--- Settings for code/quotes --->%
@@ -113,7 +125,6 @@
 \setbeamertemplate{blocks}[rounded][shadow=false]
 \setbeamercolor{block body example}{bg=green!10}
 \setbeamercolor{block title example}{bg=green!20}
-
 
 \lstdefinelanguage{ruby}
 {

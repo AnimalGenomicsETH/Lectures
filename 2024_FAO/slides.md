@@ -15,21 +15,18 @@ aspectratio: 169
 
 ### Overview {.plain .noframenumbering}
 
-- Democratised genome assembly
-- Are pangenomes style over substance?
-- The Bovine Pangenome Consortium
+\tableofcontents
 
-# Too many genomes
-
----
+``` {=latex}
+\end{frame}
+\section[Genome era]{Democratised genome assembly}
+```
 
 ### What is a genome?
 
 Encode *one* layer of information for an individual organism
 
 Sequence of ~ 1,000,000,000 nucleotides \[ACTG\] split into chromosomes
-
----
 
 ### Reference genomes
 
@@ -41,9 +38,9 @@ Definition of a reference genome:
 
 We can then align to **this** sequence and *call* variants.
 
-\includesvg[width=0.75\textwidth]{2024_FAO/reference_alignment.svg}
+. . .
 
----
+\includesvg[width=0.75\textwidth]{2024_FAO/reference_alignment.svg}
 
 ### Routine genome assembly
 
@@ -63,40 +60,39 @@ Solving a puzzle is easier with larger pieces
  - span complex regions
  - distinguish similar regions
 
----
-
 ### What is a **pan**genome?
 
 How can we integrate many assemblies into one analysis?
 
 . . .
 
-\only<2>{\includesvg[width=0.75\textwidth]{2024_FAO/pangenome_graph_1.svg}}
-\only<3>{\includesvg[width=0.75\textwidth]{2024_FAO/pangenome_graph_2.svg}}
-\only<4>{\includesvg[width=0.75\textwidth]{2024_FAO/pangenome_graph_3.svg}}
+\only<2>{\includesvg[width=0.9\textwidth]{2024_FAO/pangenome_graph_1.svg}}
+\only<3>{\includesvg[width=0.9\textwidth]{2024_FAO/pangenome_graph_2.svg}}
+\only<4>{\includesvg[width=0.9\textwidth]{2024_FAO/pangenome_graph_3.svg}}
 
-# Pangenomic era
-
----
+``` {=latex}
+\end{frame}
+\section[Pangenome era]{Are pangenomes style over substance?}
+```
 
 ### Graph resolution
+
 
 Do pangenomes *have to* represent the input genomes?
 
 . . .
 
 :::incremental
- - pangene only considers annotated genes
- - minigraph focuses on structural variation
- - pggb/cactus allow base-level resolution
+ - `pangene` only considers annotated genes
+ - `minigraph` focuses on structural variation
+ - `pggb`/`cactus` allow base-level resolution
  - *k*-mers, minimizers, conserved sequence
 :::
+\addtocounter{beamerpauses}{-1}
 
-\
+. . .
 
-[No one graph to rule them all]{.exampleblock}
-
----
+[No one graph to rule them all]{.alert}
 
 ### Are pangenomes a reference or a resource?
 
@@ -104,25 +100,30 @@ Pangenomes as a reference:
 
 > Can we exploit the diversity in the graph genome to improve analyses of other data?
 
+. . .
+
 Pangenomes as a resource:
 
 > Can we exploit the diversity already present **within** the graph to address questions
 
----
 
 ### Nothing new under the sun
 
-Pangenomes are effectively *overhyped*
+Pangenomes are sadly [overhyped]{.alert}
+
+. . .
+
+\
 
 Input is lots of sequencing data...
 
 \hfill ...output is genomic alignment/variation
 
+\
+
 . . .
 
-Avoid "pangenome" becoming the new "quantum"
-
----
+Stop "pangenome" becoming the new "quantum"!
 
 ### ~~Nothing~~ Something new under the sun
 
@@ -130,7 +131,7 @@ Pangenomes *can* help mitigate "reference bias"
 
 . . .
 
-\includesvg[width=0.5\textwidth]{2024_FAO/reference_bias.svg}
+\includesvg[width=0.8\textwidth]{2024_FAO/reference_bias.svg}
 
 . . .
 
@@ -148,10 +149,8 @@ What if a quantitative trait locus wasn't in the reference?
 
 . . .
 
-\only<3>{\includesvg[width=0.75\textwidth]{2024_FAO/reference_bias_hard_1.svg}}
-\visible<4>{\includesvg[width=0.75\textwidth]{2024_FAO/reference_bias_hard_2.svg}}
-
----
+\only<3>{\includesvg[width=0.7\textwidth]{2024_FAO/reference_bias_hard_1.svg}}
+\only<4>{\includesvg[width=0.7\textwidth]{2024_FAO/reference_bias_hard_2.svg}}
 
 ### "Personalised" pangenomes
 
@@ -161,15 +160,18 @@ Unnecessary variation may be detrimental, but we **need** to share coordinates
 
 . . .
 
-\includesvg[width=0.75\textwidth]{2024_FAO/personalised_pangenome.svg}
+\only<2>{\includesvg[width=0.75\textwidth]{2024_FAO/personalised_pangenome_1.svg}}
+\only<3>{\includesvg[width=0.75\textwidth]{2024_FAO/personalised_pangenome_2.svg}}
 
-# BPC
-
----
+``` {=latex}
+\end{frame}
+\section[BPC]{The Bovine Pangenome Consortium}
+```
 
 ### The Bovine Pangenome Consortium
 
-International collaboration across 13+ groups
+
+Decentralised international collaboration across 13+ groups and 6 continents
 
 Driving goal:
 
@@ -179,40 +181,20 @@ Driving goal:
 
 Leverage specific resources without fragmenting the community
 
----
-
-### BPC vs HPRC
-
-Decentralised, breeder interests
-
-13 different labs, many more sample providers
-
-Funding
-
 . . .
 
 A "rare" variant in the Human graph might be a breed-specific variant in the Bovine graph
 
-[The exact variation of interest]{.alert}
-
----
-
 ### White headed phenotype
 
-"Resource" pangenome
-
-\includegraphics[width=0.75\textwidth]{2024_FAO/cattle_head.png}
+"Resource" pangenomes reduce false positive mapping of reads
 
 . . .
 
+\includegraphics[width=0.75\textwidth]{2024_FAO/KIT_example.png}
 
-Pangenome improved false positive mapping of short reads
-
-\includesvg[width=0.75\textwidth]{2024_FAO/KIT_pangenome.svg}
 
 \vfill\hfill[https://doi.org/10.1101/2024.02.02.578587](https://doi.org/10.1101/2024.02.02.578587)
-
----
 
 ### (Super)pangenomes
 
@@ -230,43 +212,43 @@ Other economically relevant bovids (especially geographic)
 
  When will it not make sense to compare genomes?
 
----
-
 ### Evolution and gene loss
 
 "Result" pangenomes contain variation, do they overlap genes?
 
 . . .
 
-\
-\only<2>{\includesvg[width=0.75\textwidth]{2024_FAO/THRSP_1.svg}}
-\only<3>{\includesvg[width=0.75\textwidth]{2024_FAO/THRSP_2.svg}}
-\only<4>{\includesvg[width=0.75\textwidth]{2024_FAO/THRSP_3.svg}}
+*THRSP* -- Thyroid Hormone Responsive
+
+\only<2>{\includesvg[width=0.9\textwidth]{2024_FAO/THRSP_1.svg}}
+\only<3>{\includesvg[width=0.9\textwidth]{2024_FAO/THRSP_2.svg}}
+\only<4>{\includesvg[width=0.9\textwidth]{2024_FAO/THRSP_3.svg}}
 
 \vfill\hfill[https://doi.org/10.1038/s42003-024-07295-y](https://doi.org/10.1038/s42003-024-07295-y)
-
----
 
 ### Looking to the future
 
 \setcounter{section}{0}
 
+Pangenomes can
+
+. . .
+
 :::incremental
- - Pangenomes offer a (slightly) new angle to explore the flood of genomic data
- - Pangenomes can help mitigate bias and represent global diversity
+ - offer a (slightly) new angle to explore the flood of genomic data
+ - mitigate bias and represent global diversity
+ - prevent a reference genome apocalypse
 :::
+\addtocounter{beamerpauses}{-1}
+. . .
 
-\
-
-FAO Goal:
+FAO workshop:
 
 > Genomic assessment of genetic variation and the future of the breed concept
 
 . . .
 
 What if we don't need a *strict definition* of breed with pangenomes?
-
----
 
 ### Acknowledgements {.plain .noframenumbering}
 
@@ -281,4 +263,4 @@ What if we don't need a *strict definition* of breed with pangenomes?
    \end{minipage}
 \end{figure}
 
-Funders
+\latexincludesvg[width=.3\linewidth]{SNSF.svg}

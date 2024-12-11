@@ -84,27 +84,12 @@ $endif$
 % Prevent slide breaks in the middle of a paragraph
 \widowpenalties 1 10000
 \raggedbottom
-$if(section-titles)$
-\AtBeginPart{
-  \frame{\partpage}
-}
-\AtBeginSection{
-  \ifbibliography
-  \else
-    \frame{\sectionpage}
-  \fi
-}
-\AtBeginSubsection{
-  \frame{\subsectionpage}
-}
-$endif$
 $fonts.latex()$
 $common.latex()$
 $for(header-includes)$
 $header-includes$
 $endfor$
 $after-header-includes.latex()$
-$hypersetup.latex()$
 
 $if(title)$
 \title$if(shorttitle)$[$shorttitle$]$endif${$title$$if(thanks)$\thanks{$thanks$}$endif$}
