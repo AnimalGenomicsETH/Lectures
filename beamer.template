@@ -84,8 +84,8 @@ $endif$
 % Prevent slide breaks in the middle of a paragraph
 \widowpenalties 1 10000
 \raggedbottom
-$fonts.latex()$
 $common.latex()$
+$hypersetup.latex()$
 $for(header-includes)$
 $header-includes$
 $endfor$

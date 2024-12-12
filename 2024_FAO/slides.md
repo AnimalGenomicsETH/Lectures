@@ -2,6 +2,7 @@
 title: A screenshot of the pangenome
 author:
   - Alexander Leonard\inst{1}
+  - The Bovine Pangenome Consortium
 institute:
   - \inst{1}ETH Zürich
 date: 2024/12/12
@@ -36,29 +37,19 @@ Definition of a reference genome:
 
 . . .
 
-We can then align to **this** sequence and *call* variants.
-
-. . .
-
-\includesvg[width=0.75\textwidth]{2024_FAO/reference_alignment.svg}
+\includesvg[width=0.9\textwidth]{2024_FAO/reference_alignment.svg}
 
 ### Routine genome assembly
 
 Long read sequencing has *almost* solved genome assembly
+
+Solving a puzzle is easier with larger pieces
 
 > Jarvis, E.D., Formenti, G., Rhie, A. et al. Semi-automated assembly of high-quality diploid human reference genomes. *Nature* **611**, 519–531 (2022). [https://doi.org/10.1038/s41586-022-05325-5](https://doi.org/10.1038/s41586-022-05325-5)
 
 . . .
 
 Much faster **and** much cheaper **and** much easier today
-
-. . .
-
-Solving a puzzle is easier with larger pieces
-
- - fewer pieces
- - span complex regions
- - distinguish similar regions
 
 ### What is a **pan**genome?
 
@@ -107,35 +98,18 @@ Pangenomes as a resource:
 > Can we exploit the diversity already present **within** the graph to address questions
 
 
-### Nothing new under the sun
-
-Pangenomes are sadly [overhyped]{.alert}
-
-. . .
-
-\
-
-Input is lots of sequencing data...
-
-\hfill ...output is genomic alignment/variation
-
-\
-
-. . .
-
-Stop "pangenome" becoming the new "quantum"!
-
 ### ~~Nothing~~ Something new under the sun
 
-Pangenomes *can* help mitigate "reference bias"
+Pangenomes are often [overhyped]{.alert}, don't let it become the new "quantum"!
 
 . . .
 
-\includesvg[width=0.8\textwidth]{2024_FAO/reference_bias.svg}
+Pangenomes *can* help mitigate "reference bias", distinguish *biology* from *bad alignments*
 
 . . .
 
-How do we distinguish *bad alignment* from *biology*?
+\only<3>{\includesvg[width=0.9\textwidth]{2024_FAO/reference_bias_1.svg}}
+\only<4>{\includesvg[width=0.9\textwidth]{2024_FAO/reference_bias_2.svg}}
 
 ---
 
@@ -170,20 +144,14 @@ Unnecessary variation may be detrimental, but we **need** to share coordinates
 
 ### The Bovine Pangenome Consortium
 
-
-Decentralised international collaboration across 13+ groups and 6 continents
-
 Driving goal:
 
 > Provide genome assemblies and a community-agreed pangenome representation to replace breed-specific reference assemblies for cattle genomics
 
 . . .
 
-Leverage specific resources without fragmenting the community
+\includesvg[width=0.55\textwidth]{2024_FAO/BPC_working_groups.svg}
 
-. . .
-
-A "rare" variant in the Human graph might be a breed-specific variant in the Bovine graph
 
 ### White headed phenotype
 
@@ -191,7 +159,7 @@ A "rare" variant in the Human graph might be a breed-specific variant in the Bov
 
 . . .
 
-\includegraphics[width=0.75\textwidth]{2024_FAO/KIT_example.png}
+\includegraphics[width=0.65\textwidth]{2024_FAO/KIT_example.png}
 
 
 \vfill\hfill[https://doi.org/10.1101/2024.02.02.578587](https://doi.org/10.1101/2024.02.02.578587)
@@ -210,7 +178,7 @@ Other economically relevant bovids (especially geographic)
 
  . . .
 
- When will it not make sense to compare genomes?
+How much diversity is *too much* diversity?
 
 ### Evolution and gene loss
 
@@ -251,6 +219,8 @@ FAO workshop:
 What if we don't need a *strict definition* of breed with pangenomes?
 
 ### Acknowledgements {.plain .noframenumbering}
+
+**Hubert Pausch** & Animal Genomics ETH
 
 \begin{figure}[!htb]
    \begin{minipage}{0.58\textwidth}

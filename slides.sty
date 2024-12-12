@@ -1,4 +1,5 @@
 %<--- Settings for graphics --->%
+
 \usepackage{graphicx,fancybox,letltxmacro}
 \usepackage[inkscapearea=nocrop]{svg}
 
@@ -18,8 +19,10 @@
 %<--- Settings for overall structure --->%
 \useoutertheme[subsection=false]{miniframes}
 
-\setmainfont{NewComputerModernSans10}
-\linespread{1.1}\selectfont
+\usepackage{microtype}
+\usepackage[sans,symbols]{kpfonts-otf}
+
+\linespread{1.1}
 
 \AtBeginSection[]{}
 \AtBeginSubsection[]{}
@@ -57,6 +60,8 @@
 
 \setbeamercolor{section in toc}{fg=ETH_Petrol}
 \setbeamercolor{subsection in toc}{fg=ETH_Petrol}
+\setbeamerfont{subsection in toc}{size=\Huge}
+\setbeamertemplate{section in toc}{\color{ETH_Rot}\large\inserttocsectionnumber.~\inserttocsection}
 
 \setbeamertemplate{right corner}{%
 %\insertshortdate{}\hspace*{2em}%
@@ -79,14 +84,10 @@
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
 \hypersetup{
-  pdfauthor={Alexander Leonard},
-  colorlinks=true,
   linkcolor={ETH_Rot},
   filecolor={ETH_Rot},
   citecolor={ETH_Petrol},
-  urlcolor={ETH_Petrol},
-  pdfcreator={LaTeX via pandoc}}
-
+  urlcolor={ETH_Petrol}}
 
 %<--- Settings for code/quotes --->%
 
