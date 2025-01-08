@@ -24,6 +24,16 @@
 
 \linespread{1.1}
 
+\hypersetup{
+  linkcolor={ETH_Bronze},
+  filecolor={ETH_Rot},
+  citecolor={ETH_Petrol},
+  urlcolor={ETH_Petrol}}
+
+  \newcommand*{\nolink}[1]{%
+  {\protect\NoHyper#1\protect\endNoHyper}%
+}
+
 \AtBeginSection[]{}
 \AtBeginSubsection[]{}
 
@@ -58,10 +68,12 @@
 \setbeamertemplate{enumerate item}{\Large$\circ$}
 \setbeamertemplate{enumerate subitem}{\tiny$\triangleright$}
 
-\setbeamercolor{section in toc}{fg=ETH_Petrol}
-\setbeamercolor{subsection in toc}{fg=ETH_Petrol}
-\setbeamerfont{subsection in toc}{size=\Huge}
-\setbeamertemplate{section in toc}{\color{ETH_Rot}\large\inserttocsectionnumber.~\inserttocsection}
+\setbeamercolor{section in toc}{fg=ETH_Rot}
+\setbeamercolor{subsection in toc}{fg=ETH_Grau}
+%\setbeamerfont{subsection in toc}{size=\small}
+
+\setbeamertemplate{section in toc}{\normalsize\inserttocsectionnumber.~\inserttocsection}
+\setbeamertemplate{subsection in toc}{\scriptsize\leftskip=0.7cm\textendash~\inserttocsubsection\par}
 
 \setbeamertemplate{right corner}{%
 %\insertshortdate{}\hspace*{2em}%
@@ -83,11 +95,7 @@
 \renewcommand<>{\alert}[1]{\begin{alertenv}\underline{#2#1}\end{alertenv}}
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
-\hypersetup{
-  linkcolor={ETH_Rot},
-  filecolor={ETH_Rot},
-  citecolor={ETH_Petrol},
-  urlcolor={ETH_Petrol}}
+
 
 %<--- Settings for code/quotes --->%
 
