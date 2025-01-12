@@ -33,6 +33,7 @@ Get involved and discuss any questions or ideas of your own!
 \end{frame}
 \section[Pangenome basics]{Introduction to pangenomics}
 ```
+
 ## Terminology
 
 ### What is a genome?
@@ -227,11 +228,8 @@ It has several advantages:
 
 ### Interactive visualisation
 
-TODO: bandage example 1
+\includegraphics[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/bandageNG.png}
 
-### Interactive visualisation
-
-TODO: bandage example 2
 
 ### Static visualisation
 
@@ -267,30 +265,41 @@ Break pangenome down into multiple linear blocks
 
 ### Pangenome communities
 
-TODO: fill in this text
+Building pangenomes per chromosome is much easier than genome-wide
 
-Maybe relevant for bacterial genomics, or family-level phylogeny
+. . .
 
-### Genome- or chromosome-wide?
+What if
 
-No obvious answer on how to build graphs
-Genome-wide is much bigger problem, unlikely to contain useful biology
+ - we care about interchromosomal events
+ - we don't know how to define "per chromosome"
+ - we don't have assigned chromosomes
 
 ### Nonuniform karyotypes
 
-Gaur example 1<->29
+Even "similar" species can undergo complex chromosomal evolution
 
-How do we do generally?
+. . .
 
-Ruminant example of 2n=28, 2n=60
+\only<2>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/rT2T_karyotypes.png}}  
 
 ### Community detection
 
-`partition-before-pggb` script
+Build a network from mapped segments across genomes
+
+. . .
+
+\only<2>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/communities.pdf}}  
+
+Graph theory has community-detection algorithms!
 
 ### Community sensitivity
 
-Suitable for detecting translocations?
+Translocations or complex rearrangements are also *identified*
+
+. . .
+
+Distinguishing signal from noise is hard for small/infrequent mappings
 
 ## Pangenome validation
 
@@ -298,54 +307,17 @@ Suitable for detecting translocations?
 
 How do we know if the pangenome we built is any good?
 
+TODO:
+
 ### Some basic order of operations
 
 1. Check length
-1. Check average node size
-1. Check node depth/frequency
+2. Check average node size
+3. Check node depth/frequency
 
 . . .
 
 We could use `gfatools stat` or `odgi stats` for example to get such information.
-
-### Pangenome graph statistics
-
-The total pangenome size should *approximately* be equal to the reference plus all variation.
-
-. . .
-
-There are a lot of technical considerations like how much sequence should two large but similar alleles add?
-
-. . .
-
-Useful to get an order of magnitude guess:
-
-:::incremental
- - 50 Mb reference and 20 similar assemblies → 55 Mb pangenome seems reasonable
- - 50 Mb reference and 5 diverged assemblies → 60 Mb pangenome seems reasonable
- - 50 Mb reference and 5 diverged assemblies → 150 Mb pangenome surely is underaligned?
-:::
-
-### Pangenome graph statistics
-
-Improving genome assemblies mean centromeres are becoming more common.
-
-. . .
-
-Centomeres are basically impossible to align (and thus find homology). \
-This inflates the total pangenome sequence length.
-
-. . .
-
-The 150 Mb pangenome from 50 Mb reference and 5 diverged assemblies could be fine *if most nonreference sequence was centromeric*.
-
-(this will be a recurring issue...)
-
-. . .
-
-Centromeric sequence may even dominate the graph.
-
----
 
 ### Pangenome graph statistics
 
@@ -359,6 +331,21 @@ Consider the average node size (pangenome length / number of nodes) or average e
 
 Should be *reasonable* (how many bases do you expect before a SNP?).
 
+### Pangenome graph statistics
+
+```ruby
+Number of segments: 10140559
+Number of links: 14371940
+Number of arcs: 28743880
+Total segment length: 200985993
+Average segment length: 19.820
+Max degree: 106924
+Average degree: 1.417
+```
+
+. . .
+
+The total pangenome size should *approximately* be equal to the reference plus all variation.
 
 ### Pangenome openness
 
@@ -390,18 +377,6 @@ If $\alpha > 1$, the pangenome is **closed**, otherwise if $\alpha \leq 1$, the 
 
 ### Pangenome openness
 
-What happens if we add a duplicate sample to the pangenome? \
-No new sequence is added, so $\alpha=\infty$ and the pangenome is **closed**.
-
-. . .
-
-What happens if we add a totally unrelated sample to the pangenome? \
-Only new sequence is added, so $\alpha=0$ and the pangenome is **open**.
-
----
-
-### Pangenome openness
-
 We want enough samples to confidently *estimate* open/closedness.
 
 . . .
@@ -416,7 +391,6 @@ Agriculture pangenomes may behave differently:
 
 We might get "bumps" in the distribution when adding distinct samples.
 
-
 ### Pangenome layers
 
 Pangenome openness effectively addresses the total unique sequence. \
@@ -430,8 +404,6 @@ We can characterise pangenome *nodes* as:
  - **shell**: present in at least two samples
  - **cloud**: present in only one sample
  - **flexible**/**dispensable**: varies, but something like shell/cloud
-
----
 
 ### Pangenome layers
 
@@ -450,7 +422,6 @@ We can use this as a sanity check:
  - critical genes should be core
  - similar samples should not have too much private variation
 
----
 
 ### Pangenome layers
 
@@ -476,39 +447,62 @@ There are several software available for pangenome openness:
  - `odgi heaps`
  - `gretl` ([https://github.com/MoinSebi/gretl](https://github.com/MoinSebi/gretl))
 
-
-### Odgi
-
 ## Downstream pangenomics
 
 ### Downstream pangenomics
 
-What?
+Once we have a "good" pangenome, what can we actually do with it?
 
-### Calling variants
+### Calling pangenome variants
 
-`vg deconstruct`
+We can also call variants *within* the pangenome with `vg deconstruct`
 
-### Short read alignment
+. . .
 
-"Properly paired reads" -> distance index
+"Project" back into linear space (losing *some* pangenomic benefits)
 
-### Short read alignment
+. . .
 
-`vg giraffe`
+\only<3>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/example_gfa_5.svg}}
 
-aligning to non-DAG graphs
+### Aligning to pangenomes
 
-infinite cycle going around -> need to make "harsh" assumptions to say possible
+Linear-reference alignment is "simple"
+
+. . .
+
+ - check if next base is a match
+ - genomic distance matches insert size
+ - opposite strand is the reverse complement
+
+. . .
+
+\only<3>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/seed_extend.png}}  
+
+### Aligning to pangenomes
+
+`vg giraffe` was a huge step forward for read-to-graph alignment
+
+. . .
+
+Many algorithms silently assume "DAGs" (**D**irected **A**cyclic **G**raph)
+
+non-DAGs allow revisiting a node (maybe infinitely times)
+
+. . .
 
 \only<3>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/DAG.svg}}
 
 ### Long read alignment
 
-`GraphAligner`
+Long reads span more bubbles in graphs, complicating alignment
 
-Soon to be `vg giraffe-lr`!
+. . .
 
+Currently fewer "production" tools, but there are
+
+ - `GraphAligner`
+ - `vg giraffe-lr` soon!
 
 ``` {=latex}
 \end{frame}
@@ -525,9 +519,15 @@ Pangenomes are critical to give coordinates to all sequence
 
 We need to **maintain** those coordinates across all analyses
 
-### Irrelevant variation
+. . .
 
 Can we "filter" out graph complexity not useful for a given sample?
+
+### Irrelevant variation
+
+We can easily get *k*-mers for a sequenced sample
+
+Keep nodes/edges which span those *k*-mers
 
 . . .
 
@@ -536,8 +536,10 @@ Can we "filter" out graph complexity not useful for a given sample?
 
 ### Downstream blackbox
 
-A user could provide a complete reference pangenome and (short) reads.  
-And then
+A user could provide a complete reference pangenome and (short) reads.
+
+. . .
+Inside a black box, we can then run
 
  - `vg haplotype`
  - `vg giraffe`
@@ -546,7 +548,7 @@ And then
 
 . . .
 
-Improved variant calls without direct exposure to the pangenome
+Improved variant calls without *direct* exposure to the pangenome
 
 ## Targeted pangenomes
 
@@ -588,7 +590,7 @@ Building many small pangenomes is easier than one big pangenome
 
 . . .
 
-Recombine into chromosome-scale graphs with `gfalace`
+Recombine pieces into chromosome-scale graphs with `gfalace`
 
 . . .
 
@@ -597,21 +599,32 @@ Some unresolved concerns:
  - boundary conditions are poorly defined
  - events spanning the "split length" might be lost
 
-### Summary -- building pangenomes
+### Summary -- starting with pangenomes
 
 \setcounter{section}{0}
+
+We can make pangenomes from a relatively small set of assemblies
+
+. . .
+
+Building *good* pangenomes is still hard, but quickly getting easier
+
+. . .
+
+We can use the pangenome as a *resource* or as a *reference*
+
+### Summary --  shifting to pangenomes
 
 Pangenomes are a powerful approach to
 
  - collate growing collections of assemblies
  - fight reference bias
-
-### Summary -- using pangenomes
-
-Some test text
+ - analyse many samples/breeds/species at once
 
 ### Hands on pangenomics
 
 During the activity we'll look at
 
- - visualising a small pangenome
+ - building a small `minigraph` pangenome
+ - visualising that pangenome in `BandageNG`
+ - using `gfatools` to find regions of interest
