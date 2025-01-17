@@ -1,0 +1,15 @@
+name: pangenomics
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - python
+  - minimap2
+  - minigraph
+  - gfatools
+  - panacus
+  - vg
+  - odgi
+  - bcftools
+  - samtools
