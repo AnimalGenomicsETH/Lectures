@@ -7,6 +7,8 @@
 #curl https://genomeark.s3.amazonaws.com/species/Pan_paniscus/mPanPan1/assembly_curated/mPanPan1.mat.cur.20231122.fasta.gz > mPanPan1.fa.gz
 #curl https://genomeark.s3.amazonaws.com/species/Gorilla_gorilla/mGorGor1/assembly_curated/mGorGor1.mat.cur.20231122.fasta.gz > mGorGor1.fa.gz
 
+#curl https://genomeark.s3.amazonaws.com/species/Symphalangus_syndactylus/mSymSyn1/assembly_curated/mSymSyn1.hap1.cur.20240514.fasta.gz > mSymSyn1.fa.gz
+
 #for i in mPanTro3 mGorGor1 mPonPyg2 mPonAbe1 mPanPan1
 #do
 #  samtools faidx ${i}.fa.gz
@@ -19,4 +21,20 @@
 #samtools faidx hg002v1.1.fa.gz chr22_MATERNAL | awk '/>/ {$1=">hg002#1#chr22"}1' | bgzip -c > hg002.hsa22.fa.gz
 #samtools faidx hg002.hsa22.fa.gz
 
-#minigraph --ggen -c -o primate.gfa hg002.hsa22.fa.gz mPanTro3.hsa22.fa.gz mGorGor1.hsa22.fa.gz mPonPyg2.hsa22.fa.gz mPonAbe1.hsa22.fa.gz mPanPan1.hsa22.fa.gz 
+
+# hold chimp out, realign as call
+
+#minigraph -cxggs -L 100 -o primate.gfa hg002.hsa22.fa.gz mPanTro3.hsa22.fa.gz mPanPan1.hsa22.fa.gz mGorGor1.hsa22.fa.gz
+
+for i in mPonPyg #mPonAbe1
+do
+  minigraph -xasm --call primate.gfa ${i}.hsa22.fa.gz > ${i}.primate.bed
+done
+
+# map BCR gene
+# GorGor have insertion
+#gfatools stat primate.gfa
+
+#bubble 4,4 gives some complex repeat tangles
+
+#s3929 interesting bubble +10 radius
