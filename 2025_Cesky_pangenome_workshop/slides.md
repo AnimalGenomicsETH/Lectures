@@ -281,7 +281,7 @@ Even "similar" species can undergo complex chromosomal evolution
 
 . . .
 
-\only<2>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/rT2T_karyotypes.png}}  
+\only<2>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/rT2T_karyotype.png}}
 
 ### Community detection
 
