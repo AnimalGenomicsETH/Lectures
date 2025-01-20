@@ -7,11 +7,14 @@ This is just an introduction to the world of pangenomics, and there are many rel
 
 There are several different tools we will want to use.  
 We can mostly install them via `conda`, although in practice these versions can be fairly old for active research projects.  
-Some of these can be used on MacOS, but are not available through bioconda.
+Some of these can be used on MacOS, but are not available through bioconda.  
+Comment out the `vg` and `odgi` tools if you are attempting to install on a non-linux system.
 
 ```
-conda create -f pangenomics.yaml
+conda env create -f pangenomics.yaml
 ```
+
+Remember to `conda activate pangenomics` afterwards so the tools can be called!
 
 We also want to install `BandageNG` from [here](https://github.com/asl/BandageNG/releases/tag/continuous), depending on your operating system.  
 Some features of `BandageNG` require `BLAST` or `minimap2` to be on your $PATH, so you may need to add `minimap2` (which is installed via `conda` here) to your $PATH manually.
@@ -85,10 +88,11 @@ For example, we can use the "Graph search" feature to create a `minimap2` mappin
 We can do this for the *BCR* gene sequence taken from the CHM13 T2T human genome (not the HG002 human assembly we used in the graph).
 
 We want to "Load from FASTA file", select the "BCR.hg002.fa" file provided here, add `-xasm20` to the "Command line parameters", and the click "Run Minimap2 search".  
-Afterwards, we can return to the graph and 
-> Change "Scope: Entire graph" to "Scope: Around query hits" in the top left
-> Change "Distance: 0" to "Distance: 10" (this controls how many nodes around the feature you draw)
-> Change "Random colours" to "Gray color" in the middle left
+Afterwards, we can return to the graph and
+
+> Change "Scope: Entire graph" to "Scope: Around query hits" in the top left  
+> Change "Distance: 0" to "Distance: 10" (this controls how many nodes around the feature you draw)  
+> Change "Random colours" to "Gray color" in the middle left  
 > Expand "Annotations" and then click "Minimap2 hits" and then select "Rainbow" in the bottom left
 
 This will draw a subgraph around the *BCR* gene, and then highlight the nodes containing this gene.  
@@ -114,7 +118,7 @@ Further details on the meaining of each column of the output can be found [here]
 Quickly querying the graph is a key step to finding interesting biology contained within an abstract graph structure.  
 We can pick some regions from the above filtering/sorting steps, and the examine them in `BandageNG`, using the "Find nodes" search in the top right corner.
 
-Two interesting examples I encountered were:
+Two interesting examples I encountered were: (assuming you'll get the same nodes, `minigraph` is pretty much deterministic!)
  - a 1,756 base inversion on node **s665**
  - a complex nested SV with a 100+ Kb insertion between nodes **s3925** and **s3929**
 
@@ -162,9 +166,9 @@ curl https://raw.githubusercontent.com/lh3/minigraph/b16d8cb129b0cc558a1b5c357d8
 
 We can then visualise the same graph, but now with a slightly different format for the path information.
 
-> Change "Random colours" to "Gray color" in the middle left
-> Type "mGorGor" in the "Name:" box in the "Find paths" section on the top right
-> Click "Find path"
+> Change "Random colours" to "Gray color" in the middle left  
+> Type "mGorGor" in the "Name:" box in the "Find paths" section on the top right  
+> Click "Find path"  
 > Click "Set colour" on the bottom right and select a colour
 
 We can repeat this process for a different sample path, and then visually identify regions that are private/common between different samples.
@@ -185,9 +189,13 @@ Unfortuantely, getting this approach to work for `BandageNG` now means this grap
 We can do this in either "1 dimension" or "2 dimensions".  
 Both allow additional layers of information to be added, including colouring by depth/orientation/consensus/etc, and be combined with other `odgi` commands to produce deeply informative figures.
 
+For 1 dimension
+
 ```
 odgi viz -i primate_w_P.gfa -o primate_w_P.odgi.1D.png
 ```
+
+For 2 dimensions
 
 ```
 odgi layout -i primate_w_P.gfa -o primate_w_P.lay
