@@ -138,7 +138,8 @@ However, *done is better than perfect*.
 With the path infomation, we can then calculate path-based statistics from the graph, like openness, saturation, core/shell/cloud, etc.
 
 ```
-{ cat primate.gfa ; paste {hg002,mPanTro3,mPanPan1,mGorGor1,mPonAbe1,mPonPyg2}.primate.bubble | k8 mgutils.js path <(echo -e "hg002#1#chr22\nmPanTro3#1#chr22\nmPanPan1#1#chr22\nmGorGor1#1#chr22\nmPonAbe1#1#chr22\nmPonPyg2#1#chr22") - ; } > primate_w_P.gfa
+curl https://raw.githubusercontent.com/lh3/minigraph/38f04593f9c9ef8b1085481d0b50040bec83de89/misc/mgutils.js > mgutils_P-line.js
+{ cat primate.gfa ; paste {hg002,mPanTro3,mPanPan1,mGorGor1,mPonAbe1,mPonPyg2}.primate.bubble | k8 mgutils_P-line.js path <(echo -e "hg002#1#chr22\nmPanTro3#1#chr22\nmPanPan1#1#chr22\nmGorGor1#1#chr22\nmPonAbe1#1#chr22\nmPonPyg2#1#chr22") - ; } > primate_w_P.gfa
 panacus histgrowth -o html -a -q 0.2,0.5,0.8 primate_w_P.gfa > report.html
 ```
 
@@ -146,6 +147,35 @@ panacus histgrowth -o html -a -q 0.2,0.5,0.8 primate_w_P.gfa > report.html
 
 These are several useful starting points for analysing pangenome graphs, but really is just the beginning.  
 Here are several (slightly) more complex excercises to try if you have time.
+
+### Alternative `minigraph` P-line
+
+We added the path information into our `minigraph` pangenome using P-lines, which broadly captures the path information.  
+However, that approach effectively "jumps" over unknown regions and connects two nodes which may not actually be connected in the graph.  
+For some tools, this is okay, and for others it breaks (it technically **should** break).  
+Instead, we can add "jump" lines (J-lines), which is part of a more recent *gfa* format version to handle these regions instead.
+
+```
+curl https://raw.githubusercontent.com/lh3/minigraph/b16d8cb129b0cc558a1b5c357d860f61e29192fe/misc/mgutils.js > mgutils_J-line.js
+{ cat primate.gfa ; paste {hg002,mPanTro3,mPanPan1,mGorGor1,mPonAbe1,mPonPyg2}.primate.bubble | k8 mgutils_J-line.js path - ; } > primate_w_J.gfa
+```
+
+We can then visualise the same graph, but now with a slightly different format for the path information.
+
+> Change "Random colours" to "Gray color" in the middle left
+> Type "mGorGor" in the "Name:" box in the "Find paths" section on the top right
+> Click "Find path"
+> Click "Set colour" on the bottom right and select a colour
+
+We can repeat this process for a different sample path, and then visually identify regions that are private/common between different samples.
+
+If we identify a node representing a region of interest, we can also select that node and then click "Paths...", which will then pop up a list of all paths spanning that node.  
+We can then identify which samples might carry the allele of interest, or which samples are missing from that region, etc.
+
+`BandageNG` also plots the "J-line" itself as a dashed red line.  
+You can find which nodes these might be (typically at the start and end regions) from the *.bubble files, corresponding to the "uncalled" alleles with a "." in the final column.
+
+Unfortuantely, getting this approach to work for `BandageNG` now means this graph breaks the other tools like `panacus` and `odgi`.
 
 ### Other visualisations of the pangenome
 

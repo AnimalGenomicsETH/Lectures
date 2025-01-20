@@ -5,11 +5,11 @@ channels:
   - bioconda
 dependencies:
   - python
+  - samtools
   - minimap2
   - minigraph
   - gfatools
   - panacus
-  - vg
-  - odgi
-  - bcftools
-  - samtools
+  - vg # optional for vg deconstruct task
+  - bcftools # optional for vg deconstruct task
+  - odgi # optional for odgi 1D and 2D drawing task
