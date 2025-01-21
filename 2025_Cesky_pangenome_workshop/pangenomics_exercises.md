@@ -21,7 +21,7 @@ Some features of `BandageNG` require `BLAST` or `minimap2` to be on your $PATH, 
 
 ## Tasks
 
-All of these steps are possible to run even on a standard laptop, and generally only take a few mintutes for each command.  
+All of these steps are possible to run even on a standard laptop, and generally only take a few minutes for each command.  
 In general, this is not true of pangenomics.  
 Working with big graphs or more complex tools can easily requires hundreds of gigabytes of RAM and thousands of CPU hours and is only achievable for large computing clusters.
 
@@ -37,7 +37,7 @@ The assemblies include:
   - Western gorilla (*Gorilla gorilla*)
   - Bornean orangutan (*Pongo pygmaeus*)
   - Sumatran orangutan (*Pongo abelii*)
-  
+
 ```
 curl https://genomeark.s3.amazonaws.com/species/Pan_troglodytes/mPanTro3/assembly_curated/mPanTro3.hap1.cur.20231122.fasta.gz > mPanTro3.fa.gz
 curl https://genomeark.s3.amazonaws.com/species/Pongo_pygmaeus/mPonPyg2/assembly_curated/mPonPyg2.hap1.cur.20231122.fasta.gz > mPonPyg2.fa.gz
@@ -81,7 +81,9 @@ gfatools stat primate.gfa
 
 We can load our graph into `BandageNG` and visualise it.  
 We can investigate regions that look interesting and broadly just get a feel for this graph.  
-It is possible to zoom/pan/rotate the view with the ctrl key and mouse wheel scroll/left click/right click.
+It is possible to zoom/pan/rotate the view with the ctrl key and mouse wheel scroll/left click/right click.  
+Depending on the zoom and density of the graph, changing the "Node width:" to a smaller value (typically 5-20 looks nice for a close-up subgraph).  
+We can add labels to each node for the node ID or node length using the "Node labels" tickboxes on the middle left side.  
 
 `BandageNG` also has added many incredibly useful features beyond just visualising the graph, allowing us to expand and simplify how we want to interact with the graph.  
 For example, we can use the "Graph search" feature to create a `minimap2` mapping index (changing from the default `BLAST` mode) and then align sequences to the graph.  
@@ -111,7 +113,7 @@ Here are some examples:
 
  - `gfatools bubble primate.gfa | sort -k4,4nr | head` prints the 10 most complex bubbles (sorting by number of nodes involved in the bubble)
  - `gfatools bubble primate.gfa | sort -k4,4n | awk '($7/$8)>0.9 | head` prints the 10 most simple bubbles where the two alleles are of a similar length (like a "multinucleotide polymorphism")
- - `gfatools bubble primate.gfa | sort -k8,8nr | head` prints the 10 longest alleles in bubbles 
+ - `gfatools bubble primate.gfa | sort -k8,8nr | head` prints the 10 longest alleles in bubbles
  - `gfatools bubble primate.gfa | sort -k8,8nr | awk '$7==0' | head` prints the 10 longest alleles where one alternative allele is a deletion (i.e. length 0)
 
 Further details on the meaining of each column of the output can be found [here](https://github.com/lh3/minigraph?tab=readme-ov-file#calling-structural-variations).  
@@ -135,11 +137,11 @@ do
 done
 ```
 
-Although both officially unsupported and known to problems, it can be increadibly useful to convert these "bubble traversals" into actual "P lines" in the gfa format.  
+Although both officially unsupported and known to problems, it can be incredibly useful to convert these "bubble traversals" into actual "P lines" in the *.gfa* format.  
 Different tools have different validation approaches, some of which will reject these paths because we know they are generally invalid due to missed alignments.  
 However, *done is better than perfect*.
 
-With the path infomation, we can then calculate path-based statistics from the graph, like openness, saturation, core/shell/cloud, etc.
+With the path information, we can then calculate path-based statistics from the graph, like openness, saturation, core/shell/cloud, etc.
 
 ```
 curl https://raw.githubusercontent.com/lh3/minigraph/38f04593f9c9ef8b1085481d0b50040bec83de89/misc/mgutils.js > mgutils_P-line.js
@@ -150,14 +152,14 @@ panacus histgrowth -o html -a -q 0.2,0.5,0.8 primate_w_P.gfa > report.html
 ## Further steps
 
 These are several useful starting points for analysing pangenome graphs, but really is just the beginning.  
-Here are several (slightly) more complex excercises to try if you have time.
+Here are several (slightly) more complex exercises to try if you have time.
 
 ### Alternative `minigraph` P-line
 
 We added the path information into our `minigraph` pangenome using P-lines, which broadly captures the path information.  
 However, that approach effectively "jumps" over unknown regions and connects two nodes which may not actually be connected in the graph.  
 For some tools, this is okay, and for others it breaks (it technically **should** break).  
-Instead, we can add "jump" lines (J-lines), which is part of a more recent *gfa* format version to handle these regions instead.
+Instead, we can add "jump" lines (J-lines), which is part of a more recent *.gfa* format version to handle these regions instead.
 
 ```
 curl https://raw.githubusercontent.com/lh3/minigraph/b16d8cb129b0cc558a1b5c357d860f61e29192fe/misc/mgutils.js > mgutils_J-line.js
@@ -179,7 +181,7 @@ We can then identify which samples might carry the allele of interest, or which 
 `BandageNG` also plots the "J-line" itself as a dashed red line.  
 You can find which nodes these might be (typically at the start and end regions) from the *.bubble files, corresponding to the "uncalled" alleles with a "." in the final column.
 
-Unfortuantely, getting this approach to work for `BandageNG` now means this graph breaks the other tools like `panacus` and `odgi`.
+Unfortunately, getting this approach to work for `BandageNG` now means this graph breaks the other tools like `panacus` and `odgi`.
 
 ### Other visualisations of the pangenome
 
@@ -211,7 +213,7 @@ This approach is extremely powerful to produce a *vcf* file that is commonly use
 vg deconstruct -P "hg002" -S -C primate_w_P.gfa | bcftools view -W -o  primate_w_P.hg002.vcf.gz
 ```
 
-Typically this output would be run through postprocessing tools like `vcfbub` and `vcfwave` to handle any oddities arising from the gfa→vcf conversion.  
+Typically this output would be run through postprocessing tools like `vcfbub` and `vcfwave` to handle any oddities arising from the *.gfa*→*.vcf* conversion.  
 Even with careful curation, this is still not quite as reliable yet as linear-reference approaches and should be considered experimental.
 
 ### Aligning to the pangenome
@@ -226,12 +228,28 @@ curl https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/scratch/HG002/sequ
 
 We'll create the necessary indexes for `vg` to do efficient short read alignment to a graph, and then map the reads.  
 Since we only have a single chromosome pangenome, we expect many of the sequencing reads to not map to the pangenome.  
-We can filter these out by exluding any alignment with "*" fields, indicating they are unmapped.
+We can filter these out by excluding any alignment with "*" fields, indicating they are unmapped.
 
 ```
 vg autoindex -w giraffe -g primate_w_P.gfa -r hg002.hsa22.fa.gz
-vg giraffe -Z index.giraffe.gbz -d index.dist -m index.min -t 2 -f R1.fq.gz -f R2.fq.gz -o gaf | grep -v "*" > hg002.ElemBio.gaf
+vg giraffe -Z index.giraffe.gbz -d index.dist -m index.min --threads 4 -f R1.fq.gz -f R2.fq.gz -o gaf | grep -v "*" > hg002.ElemBio.gaf
 ```
 
 We could then investigate nodes covered in the pangenome alignments and check for consistency between the assembly and short reads (both from HG002).  
-Some tools like `gafpack` exist to summarise coverage information from a pangenome, although some custom scripts are required to then visualise that coverage in `BandageNG`.
+Some tools like `gafpack` exist to summarise coverage information from a pangenome, although some custom scripts are required to then visualise that coverage meaningfully in `BandageNG`.  
+Here, we can just loosely analyse reads that only map to a single node, using the start and end coordinate within that node.
+
+```
+awk -v OFS='\t' '{n=gsub(/[<>]/,"",$6); if (n==1) {print $6,$8,$9 }}' hg002.ElemBio.gaf > hg002.ElemBio.bed
+```
+
+This is a format we can load in `BandageNG` using the "BED" tab in the lower left section, followed by plotting it as an annotation.  
+We could get fancier and colour/label these BED entries to indicate additional information about the reads depending on what questions we have.
+
+We can also "validate" edges/bubbles in the graph, checking that the HG002 short reads align over the path taken by the HG002 assembly.  
+We can take the first 10 "junctions" where a read spans two nodes (i.e. crosses an edge), and confirm both of those nodes have the human sample in their paths.  
+We can also look for reads spanning three nodes, which can confirm we do expect to see that allele of a structural variant in our sample.
+
+```
+awk '{n=gsub(/[<>]/," ",$6); if (n>1) {print $6}}' hg002.ElemBio.gaf  | head
+```
