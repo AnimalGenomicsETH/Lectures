@@ -87,9 +87,18 @@ We can add labels to each node for the node ID or node length using the "Node la
 
 `BandageNG` also has added many incredibly useful features beyond just visualising the graph, allowing us to expand and simplify how we want to interact with the graph.  
 For example, we can use the "Graph search" feature to create a `minimap2` mapping index (changing from the default `BLAST` mode) and then align sequences to the graph.  
-We can do this for the *BCR* gene sequence taken from the CHM13 T2T human genome (not the HG002 human assembly we used in the graph).
+We can do this for the *BCR* gene sequence taken from the CHM13 T2T human genome (not the HG002 human assembly we used in the graph).  
+We'll do this as
 
-We want to "Load from FASTA file", select the "BCR.hg002.fa" file provided here, add `-xasm20` to the "Command line parameters", and the click "Run Minimap2 search".  
+> Expand the "Graph search" tab
+> Click "Create/view graph search"
+> Change from `BLAST` to `Minimap2` in the lower left corner
+> Click "Build Minimap2 database" at the top
+> Click "Load from FASTA file" and select the BCR.hg002.fa file
+> Add `-xasm20` to the "Command line parameters"
+> Click "Run Minimap2 search"
+
+This will align the sequence in the *BCR* gene to the pangenome, and provide a list of hits.  
 Afterwards, we can return to the graph and
 
 > Change "Scope: Entire graph" to "Scope: Around query hits" in the top left  
@@ -130,10 +139,12 @@ Compared to other pangenome tools like `pggb` or `minigraph-cactus` (a much more
 We can determine this post hoc with `minigraph --call`, by effectively realigning our samples to the pangenome and noting which nodes the sample mapped to.  
 We can also do this for samples that were not actually used in building the graph, like the orangutan samples.
 
+The second part (after the `minigraph --call` call) is storing an original copy of that output (using the `tee` command) and then piping it directly into some filtering steps to extract only the node ID.
+
 ```
 for i in hg002 mPanTro3 mGorGor1 mPanPan1 mPonPyg2 mPonAbe1
 do
-  minigraph -xasm --call primate.gfa ${i}.hsa22.fa.gz | tee ${i}.primate.bubble | grep -oE "(>|<)s\d+" | awk -v OFS='\t' '{N[substr($1,2)]} END {for (n in N) {print n}}'   > ${i}.primate.bed
+  minigraph -xasm --call primate.gfa ${i}.hsa22.fa.gz | tee ${i}.primate.bubble | grep -oE "(>|<)s\d+" | awk -v OFS='\t' '{N[substr($1,2)]} END {for (n in N) {print n}}' > ${i}.primate.bed
 done
 ```
 
@@ -213,7 +224,7 @@ This approach is extremely powerful to produce a *vcf* file that is commonly use
 vg deconstruct -P "hg002" -S -C primate_w_P.gfa | bcftools view -W -o  primate_w_P.hg002.vcf.gz
 ```
 
-Typically this output would be run through postprocessing tools like `vcfbub` and `vcfwave` to handle any oddities arising from the *.gfa*→*.vcf* conversion.  
+Typically this output would be run through postprocessing tools like `vcfbub` and `vcfwave` to handle any oddities arising from the *.gfa* → *.vcf* conversion.  
 Even with careful curation, this is still not quite as reliable yet as linear-reference approaches and should be considered experimental.
 
 ### Aligning to the pangenome
@@ -230,9 +241,11 @@ We'll create the necessary indexes for `vg` to do efficient short read alignment
 Since we only have a single chromosome pangenome, we expect many of the sequencing reads to not map to the pangenome.  
 We can filter these out by excluding any alignment with "*" fields, indicating they are unmapped.
 
+This step can take substantially longer than the other commands we have tested so far, as pangenome alignment is a compute-intensive process.
+
 ```
 vg autoindex -w giraffe -g primate_w_P.gfa -r hg002.hsa22.fa.gz
-vg giraffe -Z index.giraffe.gbz -d index.dist -m index.min --threads 4 -f R1.fq.gz -f R2.fq.gz -o gaf | grep -v "*" > hg002.ElemBio.gaf
+vg giraffe -Z index.giraffe.gbz -d index.dist -m index.min --threads 2 -f R1.fq.gz -f R2.fq.gz -o gaf | grep -v "*" > hg002.ElemBio.gaf
 ```
 
 We could then investigate nodes covered in the pangenome alignments and check for consistency between the assembly and short reads (both from HG002).  
