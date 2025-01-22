@@ -15,12 +15,14 @@ aspectratio: 169
 
 ### Caveat emptor {.plain .noframenumbering}
 
-There are not any pangenome "curriculums". \
+There are not any pangenome "curriculums".  
 This will be a taster to help apply pangenomics to your own research.
 
 . . .
 
 This also focuses on "**sequence graph**" pangenomics, there are many other types out there!
+\vfill
+
 . . .
 
 Get involved and discuss any questions or ideas of your own!
@@ -42,22 +44,11 @@ Encode *one* layer of information for an individual organism
 
 Sequence of ~ 1,000,000,000 nucleotides \[ACTG\] split into chromosomes
 
-### Reference genomes
+### What is a reference genome?
 
 Definition of a reference genome:
 
 > *A reference sequence is an accepted representation that is used by researchers as a standard for comparison to DNA sequences generated in their studies.*
-
-### Reference bias
-
-Why do we even **want** pangenomes?
-
-. . .
-
-\only<2>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_1.svg}}
-\only<3>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_2.svg}}
-\only<4>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_3.svg}}
-\only<5>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_4.svg}}
 
 ### Routine genome assembly
 
@@ -73,7 +64,7 @@ Much faster **and** much cheaper **and** much easier today
 
 ### What is a **pan**genome?
 
-How can we integrate many assemblies into one analysis?
+How can we integrate information from many assemblies into one structure?
 
 . . .
 
@@ -81,13 +72,24 @@ How can we integrate many assemblies into one analysis?
 \only<3>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/pangenome_graph_2.svg}}
 \only<4>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/pangenome_graph_3.svg}}
 
+### What is reference bias?
+
+Why do we even *want* pangenomes to replace reference genomes?
+
+. . .
+
+\only<2>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_1.svg}}
+\only<3>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_2.svg}}
+\only<4>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_3.svg}}
+\only<5>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_4.svg}}
+
 ### Genome file formats
 
-Most sequencing data (or anything representing genomes) are in *fasta*/*q*.
+Most sequencing data (or anything representing genomes) are in *fasta*/*q*
 
-Sequence alignments are generally in *SAM*/*BAM*.
+Sequence alignments are generally in *SAM*/*BAM*
 
-Other miscellaneous files like *BED*, *GFF*, etc.
+Other "annotation" files like *BED*, *GFF*, etc
 
 ### Pangenome terminology
 
@@ -102,8 +104,11 @@ How do we describe a graph-based sequence/variation pangenome?
 
 ### Pangenome file formats
 
-New file formats! \
-**GFA**: Graphical Fragment assembly.
+What are the pangenomic file equivalents?
+
+. . .
+
+GFA: **G**raphical **F**ragment *A**ssembly
 
 . . .
 
@@ -117,34 +122,36 @@ Three main components:
 
 ```ruby
 H       VN:Z:1.0
-S       s1      AATTTACC
-S       s2      GGTAT
-S       s3      T
-S       s4      CCCGATA
-S       s5      GGACTA
-S       s6      TTAC
-L       s1      +       s2      +       0M
-L       s1      +       s3      +       0M
-L       s2      +       s4      +       0M
-L       s3      +       s4      +       0M
-L       s4      +       s5      +       0M
-L       s5      +       s6      +       0M
-L       s4      +       s6      +       0M
-P       Alice   s1+,s2+,s4+,s5+,s6+ *
-P       Bob     s1+,s3+,s4+,s6+ *
+S       1      AATTTACC
+S       2      GGTAT
+S       3      T
+S       4      CCCGATA
+S       5      GGACTA
+S       6      TTAC
+L       1      +       2      +       0M
+L       1      +       3      +       0M
+L       2      +       4      +       0M
+L       3      +       4      +       0M
+L       4      +       5      +       0M
+L       5      +       6      +       0M
+L       4      +       6      +       0M
+P       Alice   1+,2+,4+,5+,6+ *
+P       Bob     1+,3+,4+,6+ *
 ```
 
 ### Pangenome file formats
 
-Most downstream tools have their own "efficient" representation:
+Most downstream tools have their own "efficient" representations of *.gfa* files
 
  - `.og`
  - `.vg`
  - `.xg`
  - `.gbz`
 
-These graphs contain a lot of information. \
-GFA is human-readable and can be stored better for computer operations.
+. . .
+
+These graphs contain a lot of information.  
+GFA is human-readable, but binary formats are more compute efficient
 
 ### Pangenome file formats
 
@@ -153,11 +160,11 @@ A graph "superset" of PAF (**P**airwise **m**Apping **F**ormat).
 
 . . .
 
-Similar to SAM/BAM, broadly capturing:
+Similar to *.sam* files, recording details on:
 
  - which read
- - aligns to where
- - and how good it was
+ - where does it align
+ - how good was that alignment
 
 . . .
 
@@ -167,7 +174,35 @@ Likewise, this is human-readable, and so some tools prefer the binary version `.
 
 ### Graph building
 
-TODO: fill this in with tools
+Building a "variation graph" starts with a set of assemblies
+
+. . .
+
+We often rename chromosome names using [PanSN-spec](https://github.com/pangenome/PanSN-spec)
+
+> \[sample\]#\[haplotype\]#\[contig\](#\[subrange\])
+
+. . .
+
+ - avoids conflicts of many e.g. ">chr1" sequences
+ - encodes some metadata *within* the file
+ - enables selectively grouping/renaming values by "classification"
+
+### `minigraph`
+
+Augments a linear reference "backbone" with *sufficiently* new variation
+
+. . .
+
+\only<2>{\includegraphics[width=0.2\textwidth]{2025_Cesky_pangenome_workshop/minigraph_pipeline.png}}
+
+### `pggb`
+
+All-versus-all alignment, followed by complicated cleaning of the graph structure
+
+. . .
+
+\only<2>{\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/pggb_pipeline.png}}
 
 ### Different approaches
 
@@ -179,13 +214,11 @@ TODO: fill this in with tools
 
 . . .
 
-We can perfectly reconstruct any assembly from a lossless graph.
+We can perfectly reconstruct any assembly from a *lossless* graph
 
-###
+ . . .
 
-###
-
-###
+ Pick the approach that best matches **your** research question
 
 ## Pangenome visualisation
 
@@ -203,33 +236,35 @@ Is there a pangenomic equivalent?
 
 ### Visualising **pan**genomic data
 
-**Sadly, not really...** \
-Everything is more complicated in the pangenomic world.
+Everything is more complicated in the pangenomic world
 
 . . .
 
-But it depends what are we interested in:
+What are we trying to visualise?
 
- - viewing relationship between many assemblies?
- - viewing alignments/annotations on pangenome graphs?
+ - Synteny between many assemblies?
+ - Genic regions in a pangenome?
+ - Alignments to a pangenome?
 
 ### Interactive visualisation
 
-How do we visualise the *GFA* output of pangenome construction?
+How do we visualise the *.gfa* output of pangenome construction?
 
 . . .
 
-One of the most common tools is `Bandage` ([https://github.com/asl/BandageNG](https://github.com/asl/BandageNG)). \
-It has several advantages:
+One of the most common tools is `BandageNG` ([https://github.com/asl/BandageNG](https://github.com/asl/BandageNG)).
+
+. . .
+
+We'll explore this in the pratical, but it has several advantages:
 
  - easy to install
- - quick to load small-moderate graphs
- - lots of extra functionality
+ - quick to load small-to-moderate sized graphs
+ - extensive analytic functionality
 
 ### Interactive visualisation
 
-\includegraphics[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/bandageNG.png}
-
+\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/bandageNG.png}
 
 ### Static visualisation
 
@@ -237,7 +272,7 @@ Large graphs (many nodes and/or edges) are complex to render.
 
 . . .
 
-Let the computer do the hard work and render a static representation!
+Let the computer do the **hard** work and render a static representation!
 
 ### Static visualisation
 
@@ -245,16 +280,19 @@ Break pangenome down into multiple linear blocks
 
 . . .
 
-\only<2>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/odgi_1D.png}}
+\only<2>{\includegraphics[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/odgi_1D.png}}
 
 ### Static visualisation
 
-"Optimally" lay out nodes/edges in 2D with *Hogwild!* algorithm.
+"Optimally" lay out nodes/edges in 2D with a *Hogwild!* algorithm.
 
 . . .
 
-\only<2>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/odgi_2D.svg}}
+\only<2-3>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/odgi_2D.svg}}
 
+. . .
+
+This step took ~30% of the entire HPRC pipeline runtime!
 
 ``` {=latex}
 \end{frame}
@@ -285,15 +323,13 @@ Even "similar" species can undergo complex chromosomal evolution
 
 ### Community detection
 
-Build a network from mapped segments across genomes
+`pggb` implemented community detection
+
+ - map whole genomes all-versus-all 
+ - build a *weighted* network from all submappings
+  - use graph theory community-detection algorithms
 
 . . .
-
-\only<2>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/communities.pdf}}  
-
-Graph theory has community-detection algorithms!
-
-### Community sensitivity
 
 Translocations or complex rearrangements are also *identified*
 
@@ -301,23 +337,36 @@ Translocations or complex rearrangements are also *identified*
 
 Distinguishing signal from noise is hard for small/infrequent mappings
 
+### Community detection
+
+\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/communities.pdf}
+
 ## Pangenome validation
 
 ### Pangenome validation
 
 How do we know if the pangenome we built is any good?
 
-TODO:
-
-### Some basic order of operations
-
-1. Check length
-2. Check average node size
-3. Check node depth/frequency
-
 . . .
 
-We could use `gfatools stat` or `odgi stats` for example to get such information.
+What does *good* even mean to us?
+
+### Pangenome analyses
+
+There are several tools useful for checking pangenome construction and content
+
+ - `gfatools`
+ - `odgi`
+ - `panacus`
+ - `gretl`
+
+### Pangenome graph statistics
+
+After building a graph, the simplist statistics to check are:
+
+1. total sequence length
+2. maxmimum and average node size
+3. node depth distribution
 
 ### Pangenome graph statistics
 
@@ -327,11 +376,15 @@ Different graphs (e.g., `pggb` versus `minigraph`) may have similar length, but 
 
 . . .
 
-Consider the average node size (pangenome length / number of nodes) or average edge degree (number of nodes / number of edges).
+Consider the average node size (pangenome length / number of nodes) or average edge degree (number of nodes / number of edges)
 
-Should be *reasonable* (how many bases do you expect before a SNP?).
+. . .
+
+Should be *reasonable* values (how many bases do you expect before a SNP?)
 
 ### Pangenome graph statistics
+
+From `gfatools stat` on a large, base-level bovine pangenome of chromosome 1 (159 Mb)
 
 ```ruby
 Number of segments: 10140559
@@ -349,27 +402,11 @@ The total pangenome size should *approximately* be equal to the reference plus a
 
 ### Pangenome openness
 
-What happens when we add more samples an analysis?
+How does the growth of a pangenome change with more samples?
 
 . . .
 
-Asymptotic limit for population variant.
-
-### Pangenome openness
-
-Consider something like Heap's law:
-
-> describes the number of distinct words in a document as a function of the document length
-
-. . .
-
-$$N \propto n^{-\alpha}$$
-
-where:
-
- - N is approximately the number of gene families
- - n is the number of input genomes
- - $\alpha$ is the important constant
+We can use *Heap's law* from text analysis: $N \propto n^{-\alpha}$
 
 . . .
 
@@ -377,19 +414,12 @@ If $\alpha > 1$, the pangenome is **closed**, otherwise if $\alpha \leq 1$, the 
 
 ### Pangenome openness
 
-We want enough samples to confidently *estimate* open/closedness.
+With enough samples, we can estimate $\alpha$
 
+Care is needed about how much variation is *expected* to be shared 
 . . .
 
-Agriculture pangenomes may behave differently:
-
- - small effective population sizes per breed/line
- - many distinct breeds/lines per species
- - many closely related species
-
-. . .
-
-We might get "bumps" in the distribution when adding distinct samples.
+\only<2>{\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/panacus_heaps.png}}  
 
 ### Pangenome layers
 
@@ -407,45 +437,15 @@ We can characterise pangenome *nodes* as:
 
 ### Pangenome layers
 
-As we add many samples, the core component decreases. \
-Eventually, this will just be ultraconserved elements.
+With enough samples, we expect minimal sequence to be "core"
 
 . . .
 
-Misassemblies might erroneously "demote" core segments to shell, or introduce cloud segments.
-
-
-We can use this as a sanity check:
+Misassemblies can also further reduce the "core"
 
 . . .
 
- - critical genes should be core
- - similar samples should not have too much private variation
-
-
-### Pangenome layers
-
-**HOWEVER** \
-It is hard to distinguish assembly issues from bad pangenome building.
-
-. . .
-
-An uncollapsed homology could appear as a cloud segment or disrupt a core gene.
-
-A rarely assembled region might appear as a cloud segment in a T2T genome.
-
-. . .
-
-But all of these cases can highlight areas worth exploring.
-
-
-### Pangenome layers
-
-There are several software available for pangenome openness:
-
- - `panacus` ([https://github.com/marschall-lab/panacus](https://github.com/marschall-lab/panacus))
- - `odgi heaps`
- - `gretl` ([https://github.com/MoinSebi/gretl](https://github.com/MoinSebi/gretl))
+\only<3>{\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/panacus_saturation.png}}
 
 ## Downstream pangenomics
 
@@ -477,7 +477,7 @@ Linear-reference alignment is "simple"
 
 . . .
 
-\only<3>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/seed_extend.png}}  
+\only<3>{\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/seed_extend.png}}  
 
 ### Aligning to pangenomes
 
@@ -495,11 +495,11 @@ non-DAGs allow revisiting a node (maybe infinitely times)
 
 ### Long read alignment
 
-Long reads span more bubbles in graphs, complicating alignment
+Long reads span more bubbles in graphs, exponentially complicating alignment
 
 . . .
 
-Currently fewer "production" tools, but there are
+Currently limited number of "production" tools
 
  - `GraphAligner`
  - `vg giraffe-lr` soon!
@@ -517,34 +517,39 @@ Pangenomes are critical to give coordinates to all sequence
 
 . . .
 
-We need to **maintain** those coordinates across all analyses
+We want to **maintain** those coordinates across all analyses
 
 . . .
 
-Can we "filter" out graph complexity not useful for a given sample?
+Can we "filter" out graph complexity that isn't useful for a *given* sample?
 
-### Irrelevant variation
+### Irrelevant pangenomic variation
 
-We can easily get *k*-mers for a sequenced sample
-
-Keep nodes/edges which span those *k*-mers
+Given any genomic sequencing, we can easily calculate a set of *k*-mers for that sample
 
 . . .
 
-\only<2>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/personalised_pangenome_1.svg}}
-\only<3>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/personalised_pangenome_2.svg}}
-
-### Downstream blackbox
-
-A user could provide a complete reference pangenome and (short) reads.
+Retain nodes/edges which span those *k*-mers, rather than filtering by allele frequency
 
 . . .
+
+\only<3>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/personalised_pangenome_1.svg}}
+\only<4>{\includesvg[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/personalised_pangenome_2.svg}}
+
+### Upstream blackbox
+
+Pangenomes can be challenging and don't always match downstream input formats
+
+. . .
+
+A user could provide a complete reference pangenome and (short) reads
+
 Inside a black box, we can then run
 
- - `vg haplotype`
- - `vg giraffe`
- - `vg surject`
- - `DeepVariant`
+ - `vg haplotype` (personalise the pangenome)
+ - `vg giraffe` (align to the pangenome)
+ - `vg surject` (convert back to linear coordiantes)
+ - e.g. `DeepVariant` (call variants as per usual)
 
 . . .
 
@@ -562,7 +567,9 @@ Most pangenome papers focus on one/several *QTL*
 
 . . .
 
-\only<3>{\includegraphics[width=0.8\textwidth]{2025_Cesky_pangenome_workshop/impg.png}}
+\only<3>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/THRSP_1.svg}}
+\only<4>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/THRSP_2.svg}}
+\only<5>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/THRSP_3.svg}}
 
 ### Manual QTL pangenome
 
@@ -570,7 +577,7 @@ For a given reference-annotated region, we can:
 
 . . .
 
- 1. lift over equivalent coordinates into other assemblies
+ 1. lift over equivalent reference coordinates into other assemblies
  2. extract relevant section of those assemblies
  3. build a pangenome from these sequences
 
@@ -581,12 +588,14 @@ For a given reference-annotated region, we can:
 . . .
 
  1. conduct the hard all-to-all mapping once
- 2. extract *transitive* regions based on reference coordinates
+ 2. extract *transitive* regions based on a set of coordinates
  3. build a pangenome from those sequences
 
 ### A new whole-genome approach?
 
 Building many small pangenomes is easier than one big pangenome
+
+Can we go from per *chromosome* to per *window*?
 
 . . .
 
@@ -598,28 +607,37 @@ Some unresolved concerns:
 
  - boundary conditions are poorly defined
  - events spanning the "split length" might be lost
+ - detecting subgraph isomorphisms is hard
 
 ### Summary -- starting with pangenomes
 
 \setcounter{section}{0}
 
-We can make pangenomes from a relatively small set of assemblies
+Pangenomes can integrate many genomes into one structure to mitigate reference bias
+\vfill
 
 . . .
 
-Building *good* pangenomes is still hard, but quickly getting easier
+Building pangenomes is still hard, but quickly getting easier
+\vfill
 
 . . .
 
-We can use the pangenome as a *resource* or as a *reference*
+Pangenome openess or graph statistics help us know if our graphs are "good"
 
-### Summary --  shifting to pangenomes
+### Summary --  working with pangenomes
 
-Pangenomes are a powerful approach to
+We can use the pangenome as a *reference* or as a *resource*
+\vfill
 
- - collate growing collections of assemblies
- - fight reference bias
- - analyse many samples/breeds/species at once
+. . .
+
+Examining overlap between pangenomic variation and annotations is possible
+\vfill
+
+. . .
+
+Population-scale read alignment and "direct" pangenomic analyses are *becoming* possible
 
 ### Hands on pangenomics
 
@@ -628,3 +646,5 @@ During the activity we'll look at
  - building a small `minigraph` pangenome
  - visualising that pangenome in `BandageNG`
  - using `gfatools` to find regions of interest
+
+### Questions?

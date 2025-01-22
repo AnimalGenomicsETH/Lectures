@@ -14,7 +14,7 @@
 \NewCommandCopy\latexincludesvg\includesvg
   \renewcommand{\includesvg}[2][]{%
     \begin{center}
-  	\latexincludesvg[#1]{#2}
+       \latexincludesvg[#1]{#2}
     \end{center}}
 
 %<--- Settings for overall structure --->%
@@ -145,10 +145,12 @@
     tabsize=4,
     alsoletter={-?}, % allowed in names
     morecomment=[s][\color{blue}]{<}{>},
-    basicstyle=\footnotesize\ttfamily\color{black},
+    basicstyle=\scriptsize\ttfamily\color{black},
     numberstyle=\tiny,
+    keepspaces=true,
     morestring=[b][\color{black}]\",
     backgroundcolor=\color{ETH_Petrol!5},
+    frame=single,
     rulecolor=\color{ETH_Petrol},
 }
 
