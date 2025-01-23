@@ -166,6 +166,12 @@ P       Bob     1+,3+,4+,6+ *
 
 ### Pangenome file formats
 
+That looks like
+
+\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/dummy_gfa.svg}
+
+### Pangenome file formats
+
 Most downstream tools have their own "efficient" representations of *.gfa* files
 
  - `.og`

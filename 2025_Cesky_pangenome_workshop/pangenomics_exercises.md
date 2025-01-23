@@ -90,6 +90,12 @@ We can add labels to each node for the node ID or node length using the "Node la
 `BandageNG` also has added many incredibly useful features beyond just visualising the graph, allowing us to expand and simplify how we want to interact with the graph.  
 For example, we can use the "Graph search" feature to create a `minimap2` mapping index (changing from the default `BLAST` mode) and then align sequences to the graph.  
 We can do this for the *BCR* gene sequence taken from the CHM13 T2T human genome (not the HG002 human assembly we used in the graph).  
+
+We can download the BCR gene file as
+```
+wget https://raw.githubusercontent.com/AnimalGenomicsETH/Lectures/refs/heads/main/2025_Cesky_pangenome_workshop/BCR.hg002.fa
+```
+
 We'll do this as
 
 > Expand the "Graph search" tab
@@ -119,7 +125,7 @@ There are also many ways to highlight/label/colour nodes by ID, from an external
 
 We can identify regions of variation within the graph using `gfatools bubble primate.gfa`.  
 However, there are thousands of such regions in the graph.  
-We can prioritise regions to manually investigate with some basic filtering/sorting approaches.  
+We can **prioritise** regions to manually investigate with some basic filtering/sorting approaches.
 Here are some examples:
 
  - `gfatools bubble primate.gfa | sort -k4,4nr | head` prints the 10 most complex bubbles (sorting by number of nodes involved in the bubble)
