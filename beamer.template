@@ -114,8 +114,8 @@ $endif$
 
 \begin{document}
 $if(title)$
-\frame[plain,noframenumbering]{%
-\latexincludesvg[width=0.2\textwidth]{eth_logo_kurz_pos.svg}\hfill\latexincludesvg[width=0.15\textwidth]{BPC_logo.svg}
+\frame[plain,noframenumbering]{
+\latexincludesvg[width=0.2\textwidth]{eth_logo_kurz_pos.svg}\hfill\latexincludesvg[width=0.2\textwidth]{SNSF.svg}
 \vspace*{-0.2\textheight}
 \titlepage}
 $if(abstract)$

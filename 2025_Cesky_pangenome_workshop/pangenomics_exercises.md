@@ -38,6 +38,8 @@ The assemblies include:
   - Bornean orangutan (*Pongo pygmaeus*)
   - Sumatran orangutan (*Pongo abelii*)
 
+The data has likely already been downloaded and processed, so we do not need to rerun these steps.
+
 ```
 curl https://genomeark.s3.amazonaws.com/species/Pan_troglodytes/mPanTro3/assembly_curated/mPanTro3.hap1.cur.20231122.fasta.gz > mPanTro3.fa.gz
 curl https://genomeark.s3.amazonaws.com/species/Pongo_pygmaeus/mPonPyg2/assembly_curated/mPonPyg2.hap1.cur.20231122.fasta.gz > mPonPyg2.fa.gz
@@ -157,6 +159,7 @@ With the path information, we can then calculate path-based statistics from the 
 ```
 curl https://raw.githubusercontent.com/lh3/minigraph/38f04593f9c9ef8b1085481d0b50040bec83de89/misc/mgutils.js > mgutils_P-line.js
 { cat primate.gfa ; paste {hg002,mPanTro3,mPanPan1,mGorGor1,mPonAbe1,mPonPyg2}.primate.bubble | k8 mgutils_P-line.js path <(echo -e "hg002#1#chr22\nmPanTro3#1#chr22\nmPanPan1#1#chr22\nmGorGor1#1#chr22\nmPonAbe1#1#chr22\nmPonPyg2#1#chr22") - ; } > primate_w_P.gfa
+
 panacus histgrowth -o html -a -q 0.2,0.5,0.8 primate_w_P.gfa > report.html
 ```
 
@@ -231,6 +234,8 @@ Even with careful curation, this is still not quite as reliable yet as linear-re
 
 We can download some more publicly available data, this time short read sequencing on HG002 from Element Biosciences sequencing.  
 For simplicity, we'll take only the first million reads of each pair.
+
+The data has likely already been downloaded, so we do not need to rerun these steps.
 
 ```
 curl https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/scratch/HG002/sequencing/element/trio/HG002/ins1000/ASHG-C063_R1.fastq.gz | zcat | head -n 1000000 | bgzip -c > R1.fq.gz

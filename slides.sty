@@ -25,6 +25,14 @@
 
 \linespread{1.1}
 
+\definecolor{ETH_Blau}{RGB}{33, 92, 175}
+\definecolor{ETH_Petrol}{RGB}{0, 120, 148}
+\definecolor{ETH_Grun}{RGB}{98, 115, 19}
+\definecolor{ETH_Bronze}{RGB}{142, 103, 19}
+\definecolor{ETH_Grau}{RGB}{111, 111, 111}
+\definecolor{ETH_Rot}{RGB}{183, 53, 45}
+\definecolor{ETH_Purpur}{RGB}{167, 17, 122}
+
 \hypersetup{
   linkcolor={ETH_Bronze},
   filecolor={ETH_Rot},
@@ -37,14 +45,6 @@
 
 \AtBeginSection[]{}
 \AtBeginSubsection[]{}
-
-\definecolor{ETH_Blau}{RGB}{33, 92, 175}
-\definecolor{ETH_Petrol}{RGB}{0, 120, 148}
-\definecolor{ETH_Grun}{RGB}{98, 115, 19}
-\definecolor{ETH_Bronze}{RGB}{142, 103, 19}
-\definecolor{ETH_Grau}{RGB}{111, 111, 111}
-\definecolor{ETH_Rot}{RGB}{183, 53, 45}
-\definecolor{ETH_Purpur}{RGB}{167, 17, 122}
 
 \setbeamerfont{headline}{size=\scriptsize}
 
@@ -115,8 +115,7 @@
 
 % redefine the 'quote' environment to use this 'myquote' environment
 \renewenvironment{quote}{\begin{myquote}\small}{\end{myquote}}
-\newtcolorbox{myquote}{colback=ETH_Petrol!3!white, colframe=ETH_Bronze}
-\newtcolorbox{myquote2}{colback=green!5!white, colframe=green!75!black}
+\newtcolorbox{myquote}{colback=ETH_Petrol!5!white, colframe=ETH_Purpur}
 
 \tcbset{%
     noparskip,

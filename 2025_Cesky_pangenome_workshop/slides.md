@@ -15,17 +15,15 @@ aspectratio: 169
 
 ### Caveat emptor {.plain .noframenumbering}
 
-There are not any pangenome "curriculums".  
-This will be a taster to help apply pangenomics to your own research.
+Pangenomics is a *rapidly evolving* and *poorly defined* field, this is just a taster
 
 . . .
 
-This also focuses on "**sequence graph**" pangenomics, there are many other types out there!
-\vfill
+This also focuses on "**sequence/variation graph**" pangenomics, but there are many other types out there!
 
 . . .
 
-Get involved and discuss any questions or ideas of your own!
+\only<3>{\includesvg[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/BPC_diagram.svg}}
 
 ### Overview {.plain .noframenumbering}
 
@@ -50,6 +48,12 @@ Definition of a reference genome:
 
 > *A reference sequence is an accepted representation that is used by researchers as a standard for comparison to DNA sequences generated in their studies.*
 
+. . .
+
+We use the **same** reference genome for these **different** cows?
+
+\only<2>{\includegraphics[width=0.9\textwidth]{2025_Cesky_pangenome_workshop/cattle_head.png}}
+
 ### Routine genome assembly
 
 Long read sequencing has *almost* solved genome assembly
@@ -61,6 +65,17 @@ Solving a puzzle is easier with larger pieces
 . . .
 
 Much faster **and** much cheaper **and** much easier today
+
+### What is a **pan**genome?
+
+Almost no consensus of what a pangenome *is*
+
+. . .
+
+ - a reference genome with a vcf
+ - a set of genome assemblies
+ - a list of haplotypes\pause
+ - **a graph structure representing variation across multiple assemblies**
 
 ### What is a **pan**genome?
 
@@ -82,6 +97,16 @@ Why do we even *want* pangenomes to replace reference genomes?
 \only<3>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_2.svg}}
 \only<4>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_3.svg}}
 \only<5>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/reference_bias_4.svg}}
+
+### How do we represent complex variaton?
+
+SNPs can **at worst** be quadallelic but a small SV (50 bp) can have $4^{50} \approx 1.3 \times 10^{30}$ alleles
+
+. . .
+
+\only<2>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/nested_vcf_1.svg}}
+\only<3>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/nested_vcf_2.svg}}
+\only<4>{\includesvg[width=0.7\textwidth]{2025_Cesky_pangenome_workshop/nested_vcf_3.svg}}
 
 ### Genome file formats
 
@@ -180,7 +205,7 @@ Building a "variation graph" starts with a set of assemblies
 
 We often rename chromosome names using [PanSN-spec](https://github.com/pangenome/PanSN-spec)
 
-> \[sample\]#\[haplotype\]#\[contig\](#\[subrange\])
+> \[sample\]#\[haplotype\]#\[contig\](#\[fragment/subrange\])
 
 . . .
 
@@ -194,7 +219,7 @@ Augments a linear reference "backbone" with *sufficiently* new variation
 
 . . .
 
-\only<2>{\includegraphics[width=0.2\textwidth]{2025_Cesky_pangenome_workshop/minigraph_pipeline.png}}
+\only<2>{\includegraphics[width=0.25\textwidth]{2025_Cesky_pangenome_workshop/minigraph_pipeline.png}}
 
 ### `pggb`
 
@@ -216,9 +241,23 @@ All-versus-all alignment, followed by complicated cleaning of the graph structur
 
 We can perfectly reconstruct any assembly from a *lossless* graph
 
- . . .
+. . .
 
- Pick the approach that best matches **your** research question
+Pick the approach that best matches **your** research question
+
+### Other pangenome tools
+
+Variation is a powerful tool, but easy to get overwhelmed by
+
+. . .
+
+ - `pangene`
+ - `pgr-tk`
+ - many dBG tools (`bifrost` etc.)
+
+. . .
+
+\only<3>{\includesvg[width=0.75\textwidth]{2025_Cesky_pangenome_workshop/pangene_PAG.svg}}
 
 ## Pangenome visualisation
 
@@ -256,7 +295,7 @@ One of the most common tools is `BandageNG` ([https://github.com/asl/BandageNG](
 
 . . .
 
-We'll explore this in the pratical, but it has several advantages:
+We'll explore this in the practical, but it has several advantages:
 
  - easy to install
  - quick to load small-to-moderate sized graphs
@@ -292,7 +331,7 @@ Break pangenome down into multiple linear blocks
 
 . . .
 
-This step took ~30% of the entire HPRC pipeline runtime!
+This step took **~30%** of the entire HPRC pipeline runtime!
 
 ``` {=latex}
 \end{frame}
@@ -325,7 +364,7 @@ Even "similar" species can undergo complex chromosomal evolution
 
 `pggb` implemented community detection
 
- - map whole genomes all-versus-all 
+ - map whole genomes all-versus-all
  - build a *weighted* network from all submappings
   - use graph theory community-detection algorithms
 
@@ -339,7 +378,7 @@ Distinguishing signal from noise is hard for small/infrequent mappings
 
 ### Community detection
 
-\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/communities.pdf}
+\includegraphics[width=0.5\textwidth]{2025_Cesky_pangenome_workshop/communities.pdf}
 
 ## Pangenome validation
 
@@ -416,7 +455,7 @@ If $\alpha > 1$, the pangenome is **closed**, otherwise if $\alpha \leq 1$, the 
 
 With enough samples, we can estimate $\alpha$
 
-Care is needed about how much variation is *expected* to be shared 
+Care is needed about how much variation is *expected* to be shared
 . . .
 
 \only<2>{\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/panacus_heaps.png}}  
@@ -609,6 +648,64 @@ Some unresolved concerns:
  - events spanning the "split length" might be lost
  - detecting subgraph isomorphisms is hard
 
+## Pangenomes = biology?
+
+### Acrocentric recombination
+
+Caveat: biologists probably knew before the computer people
+
+. . .
+
+Initial human pangenome construction lead to huge tangles in *some* chromosomes
+
+. . .
+
+Pangenomes (at minimum) offer a new perspective on existing questions
+
+### Acrocentric recombination
+
+Pseudo-homologous regions near centomeres drive Robertsonian translocations 
+
+. . .
+
+\only<2>{\includegraphics[width=0.6\textwidth]{2025_Cesky_pangenome_workshop/acrocentric_recombination.png}}
+
+\hfill{\scriptsize[Guarracino et al. 2023](https://www.nature.com/articles/s41586-023-05976-y)}
+
+### Braided snarls
+
+Strange pangenomic structures are generally worrying
+
+. . .
+
+They might actually reveal biology in way we didn't anticipate!
+
+. . .
+
+\only<3>{\includegraphics[width=0.3\textwidth]{2025_Cesky_pangenome_workshop/braided_snarl.png}}
+
+### **Super**pangenomes
+
+Typically "pangenomes" refer to a single species
+
+. . .
+
+Superpangenomes include more diverse assemblies, e.g., *genus*-level
+
+. . .
+
+**Hyper**/**Mega**/**Ultra**pangenomes?
+
+### **Super**pangenomes
+
+What happens if we include many related species into a pangenome?
+
+. . .
+
+ - ultraconserved elements are still roughly single nodes
+ - species-specific variation are distinct paths through bubbles
+ - phylogeny-related information present in nested bubbles
+
 ### Summary -- starting with pangenomes
 
 \setcounter{section}{0}
@@ -632,7 +729,8 @@ We can use the pangenome as a *reference* or as a *resource*
 
 . . .
 
-Examining overlap between pangenomic variation and annotations is possible
+T2T assemblies and pangenomes *can* unlocking entirely new perspectives
+
 \vfill
 
 . . .
