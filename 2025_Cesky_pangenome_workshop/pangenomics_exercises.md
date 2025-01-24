@@ -211,17 +211,23 @@ Unfortunately, getting this approach to work for `BandageNG` now means this grap
 We can do this in either "1 dimension" or "2 dimensions".  
 Both allow additional layers of information to be added, including colouring by depth/orientation/consensus/etc, and be combined with other `odgi` commands to produce deeply informative figures.
 
+We first have to remove the "s" from the node IDs (and also from the edges and the paths). For computational efficiency on big graphs, many tools require the node ID to be numeric, whereas our IDs are currently strings (i.e. `s1` rather than just `1`). We'll substitute out the "s"'s from the respective columns, making sure we don't accidentally remove an "s" from a sample name (which can be a string).
+
+```
+awk -v OFS='\t' '{if ($1=="S") {gsub("s","",$2);} else {if ($1=="L") {gsub("s","",$2);gsub("s","",$4);} else { if($1=="P") {gsub("s","",$3)} } } }1' primate_w_P.gfa > primate_w_P_fixed_ID.gfa
+```
+
 For 1 dimension
 
 ```
-odgi viz -i primate_w_P.gfa -o primate_w_P.odgi.1D.png
+odgi viz -i primate_w_P_fixed_ID.gfa -o primate_w_P.odgi.1D.png
 ```
 
 For 2 dimensions
 
 ```
-odgi layout -i primate_w_P.gfa -o primate_w_P.lay
-odgi draw -i primate_w_P.gfa --coords-in primate_w_P.lay --png primate_w_P.odgi.2D.png
+odgi layout -i primate_w_P_fixed_ID.gfa -o primate_w_P.lay
+odgi draw -i primate_w_P_fixed_ID.gfa --coords-in primate_w_P.lay --png primate_w_P.odgi.2D.png
 ```
 
 ### Decomposing variants in the pangenome
@@ -230,7 +236,7 @@ If we have many samples of interest in the pangenome, we can directly assess var
 This approach is extremely powerful to produce a *vcf* file that is commonly used downstream, but can frequently have issues with allele representation and duplicate variants.
 
 ```
-vg deconstruct -P "hg002" -S -C primate_w_P.gfa | bcftools view -W -o  primate_w_P.hg002.vcf.gz
+vg deconstruct -P "hg002" -S -C primate_w_P_fixed_ID.gfa | bcftools view -W -o  primate_w_P.hg002.vcf.gz
 ```
 
 Typically this output would be run through postprocessing tools like `vcfbub` and `vcfwave` to handle any oddities arising from the *.gfa* → *.vcf* conversion.  
@@ -255,7 +261,7 @@ We can filter these out by excluding any alignment with "*" fields, indicating t
 This step can take substantially longer than the other commands we have tested so far, as pangenome alignment is a compute-intensive process.
 
 ```
-vg autoindex -w giraffe -g primate_w_P.gfa -r hg002.hsa22.fa.gz
+vg autoindex -w giraffe -g primate_w_P_fixed_ID.gfa -r hg002.hsa22.fa.gz
 vg giraffe -Z index.giraffe.gbz -d index.dist -m index.min --threads 2 -f R1.fq.gz -f R2.fq.gz -o gaf | grep -v "*" > hg002.ElemBio.gaf
 ```
 
