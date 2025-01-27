@@ -1,15 +1,16 @@
 # Genomic Animal Breeding part 2 -- Current Challenges in Animal Genomics
 
-Three broad sections covering "modern" genomic analysis
+Three broad sections covering "modern" genomic analyses:
+
  - Genomic sequencing
- - Applying genomic data
+ - Large-scale genomic data
  - Transition to pangenomics
 
 followed by some other topics rapidly gaining attraction like CRISPR.
 
 Intended as an introduction to techniques currently employed in many fields of agricultural research.
 
-Would cover 11 lectures and 2 practical sessions (~2 credit points).
+Would cover 11 2-hour lectures and 2 2-hour practical sessions (~2 credit points).
 PhD students can participate as teaching assistants during the practicals.
 
 ## Developed competencies
@@ -43,42 +44,64 @@ Written examination covering
 
 ## Section 1 -- Genomic sequencing
 
-Misc topics
- - theory of genome coverage
- - DNA versus RNA
- - genotype arrays
- - first gen, "NGS" short read DNA
- - third gen
- - 4th gene
- - Other sequencing types
-   - HiC/optical map/single cell/PoreC/CiFi
-   - methylation
-   - ATAC/chip/DIP/RAD/panel enrichment
-
 ### Lecture 1 -- Background and "legacy" sequencing
 
+ - overview of reference genome, SNPs, etc
+ - overview of DNA/RNA/epigenome/proteome
+ - theory of genome coverage depth
+ - progression of sequencing
+   - first gen/sanger
+   - second gen/NGS
+   - third gen/long reads
+   - "fourth gen"/ultalong/HQ/methylation
+ - genotyping arrays
+
 ### Lecture 2 -- Long read sequencing
+ 
+ - hint at limitations of short reads
+ - progression of noisy to accurate long reads
+ - PacBio & Nanopore
+ - methylation
+ 
 
 ### Lecture 3 -- Multiomic sequencing
 
-## Section 2 -- Applying genomic data
+ - RNA sequencing
+   - cDNA
+   - native 
+- conformation sequencing
+  - HiC/microC/omniC
+  - PoreC/CiFi
+- ATAC/chip/DIP/
+- RAD & panel target enrichment
 
-Misc topics
- - QC filtering
- - alignment
- - Variant calling
- - Low pass imputation
-   - can reimpute if panel/tools improve, can redo to reduce bias
- - genome assembly
+## Section 2 -- Applying genomic data
 
 ### Lecture 4 -- Working with sequencing data
 
-Misc topics
- - Short and long read alignment of a region
+ - background on file formats
+ - QC filtering
+ - Sequencing alignment
+   - trivial theory
+   - types of algorithms used
+   - short versus long read alignment
 
-### Lecture 5
+### Lecture 5 -- Variant calling and imputation
 
-### Practical 1 -- Sequencing alignment and variant calling
+ - basics of variant calling
+ - current variant callers
+ - Sporadic imputation
+ - Low pass imputation (could move to section 4)
+   - alternative to arrays, similar cost but no explicit reference bias
+
+### Practical 1 -- Analysing whole-genome sequencing data
+
+Starting from aligned short and long read sequencing data
+
+ - primer on unix/command line interface
+ - calculate statistics of aligned BAMs
+ - visualise alignments and variant calls in IGV
+ - compare differences in short and long read data
 
 ### Lecture 6 -- Genome assembly
 
@@ -105,15 +128,17 @@ Misc topics
 
 ### Practical 2 -- Building and visualising pangenomes
 
-Misc topics
- - building small pangenome
- - visualising
- - finding region of interest
+Starting from a curated set of several assemblies
+
+ - build a small minigraph pangenome
+ - use BandageNG to visualise/explore the pangenome
+ - identify regions of interest in the pangenome for subsequent analysis
 
 ### Lecture 9 -- "Next generation" pangenomics
 
- - personalised pangenomes
  - "super"pangenomes
+ - personalised pangenomes
+ - implicit pangenomes
 
 ## Section 4 -- Emerging topics
 
@@ -123,3 +148,7 @@ Misc topics
  - induced TE mutations
 
 ### Lecture 11 -- Student presentation
+ 
+ - group presentation on topic addressed in lectures
+ - address outstanding questions
+ - practice exam 
