@@ -17,6 +17,11 @@
        \latexincludesvg[#1]{#2}
     \end{center}}
 
+\RequirePackage{shellesc}
+\newcommand{\includesvglayer}[4]{%
+  \input{|"./inkscape2layers.py #2 #3 #4 #1"}
+}
+
 %<--- Settings for overall structure --->%
 \useoutertheme[subsection=false]{miniframes}
 
