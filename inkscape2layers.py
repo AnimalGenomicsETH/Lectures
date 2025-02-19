@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import argparse
-from pathlib import PurePath
+from pathlib import Path
 import subprocess
 import xml.etree.ElementTree as ET
 import tempfile
@@ -69,8 +69,9 @@ def main():
     latex_string = []
     for N, layers in enumerate(args.layer_groups.split(":")):
         layer_list = layers.split(",")
-        output_pdf = 'svg-inkscape/' + PurePath(args.svg_file).stem + '-raw.pdf'
-        export_layer_group(args.svg_file, output_pdf, tree, available_layers, layer_list)
+        output_pdf = f"svg-inkscape/{Path(args.svg_file).stem}-raw-{N}.pdf"
+        if not Path(output_pdf).exists():
+            export_layer_group(args.svg_file, output_pdf, tree, available_layers, layer_list)
         latex_string.append(rf'\only<{pauses[N]}>{{\includegraphics[width={args.width}\textwidth]{{{output_pdf}}}}}')
 
     print('%\n'.join(latex_string))

@@ -26,7 +26,15 @@
 \useoutertheme[subsection=false]{miniframes}
 
 \usepackage{microtype}
-\usepackage[sans,symbols]{kpfonts-otf}
+\usepackage{fontspec}
+\IfFontExistsTF{DINNextW1G-Light}{%
+  \setsansfont[%
+      Extension     = .otf,
+      Ligatures     = TeX,
+      BoldFont      = {DINNextW1G-Bold},
+      ItalicFont      = {DINNextW1G-Italic}
+  ]{DINNextW1G-Light}
+}
 
 \linespread{1.1}
 
