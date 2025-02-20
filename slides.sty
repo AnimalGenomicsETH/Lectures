@@ -1,8 +1,6 @@
 %<--- Settings for graphics --->%
-
 \usepackage{graphicx,fancybox,letltxmacro}
-\usepackage[inkscapearea=nocrop]{svg}
-\svgsetup{inkscapelatex=false}
+\usepackage[inkscapearea=nocrop,inkscapelatex=false]{svg}
 
 % save the meaning of \includegraphics
 \NewCommandCopy\latexincludegraphics\includegraphics
@@ -109,8 +107,6 @@
 \renewcommand<>{\alert}[1]{\begin{alertenv}\underline{#2#1}\end{alertenv}}
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
-
-
 %<--- Settings for code/quotes --->%
 
 \usepackage[listings,skins,breakable,xparse]{tcolorbox}
@@ -126,9 +122,8 @@
   \colorbox{ETH_Grau}{\oldtexttt{#1}}
 }
 
-% redefine the 'quote' environment to use this 'myquote' environment
-\renewenvironment{quote}{\begin{myquote}\small}{\end{myquote}}
-\newtcolorbox{myquote}{colback=ETH_Petrol!5!white, colframe=ETH_Purpur}
+\usepackage[none]{hyphenat}%%%%
+\renewenvironment{quote}{\tcolorbox[fontupper=\footnotesize,hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colframe=ETH_Purpur]}{\endtcolorbox}
 
 \tcbset{%
     noparskip,
@@ -176,6 +171,7 @@
     alsoletter={-?}, % allowed in names
     morecomment=[s][\color{blue}]{<}{>},
     basicstyle=\ttfamily\color{black},
+    commentstyle=\sffamily\color{ETH_Grau},
     numberstyle=\tiny,
     morestring=[b][\color{black}]\",
     backgroundcolor=\color{ETH_Bronze},
