@@ -1,5 +1,5 @@
 %<--- Settings for graphics --->%
-\usepackage{graphicx,fancybox,letltxmacro}
+\usepackage{fancybox,letltxmacro}
 \usepackage[inkscapearea=nocrop,inkscapelatex=false]{svg}
 
 % save the meaning of \includegraphics
@@ -30,11 +30,12 @@
       Extension     = .otf,
       Ligatures     = TeX,
       BoldFont      = {DINNextW1G-Bold},
-      ItalicFont      = {DINNextW1G-Italic}
+      ItalicFont      = {DINNextW1G-LightItalic}
   ]{DINNextW1G-Light}
 }
 
 \linespread{1.1}
+\renewcommand{\arraystretch}{1.25}
 
 \definecolor{ETH_Blau}{RGB}{33, 92, 175}
 \definecolor{ETH_Petrol}{RGB}{0, 120, 148}
@@ -57,6 +58,7 @@
 \AtBeginSection[]{}
 \AtBeginSubsection[]{}
 
+\setbeamerfont{title}{size=\huge}
 \setbeamerfont{headline}{size=\scriptsize}
 
 \setbeamercolor*{structure}{fg=ETH_Blau}
@@ -84,6 +86,23 @@
 \setbeamercolor{subsection in toc}{fg=ETH_Grau}
 %\setbeamerfont{subsection in toc}{size=\small}
 
+\setbeamertemplate{title page}{
+  \vbox{}
+  \latexincludegraphics[width=0.2\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\latexincludegraphics[width=0.2\textwidth]{svg-inkscape/SNSF.pdf}
+  \vfill
+  \vfill
+  \begingroup
+    \centering
+    \usebeamertemplate{title}
+    \vfill
+    \usebeamertemplate{author}
+    \usebeamertemplate{institute}
+    \vfill
+    \usebeamertemplate{date}
+  \endgroup
+  \vfill
+}
+
 \setbeamertemplate{section in toc}{\normalsize\inserttocsectionnumber.~\inserttocsection}
 \setbeamertemplate{subsection in toc}{\scriptsize\leftskip=0.7cm\textendash~\inserttocsubsection\par}
 
@@ -104,6 +123,8 @@
 }
 \makeatother
 
+\AtBeginEnvironment{frame}{\setcounter{footnote}{0}}
+
 \renewcommand<>{\alert}[1]{\begin{alertenv}\underline{#2#1}\end{alertenv}}
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
@@ -115,11 +136,6 @@
 \LetLtxMacro\latexlstinline\lstinline
 \renewcommand{\lstinline}[1][]{%
   \latexlstinline[basicstyle=\ttfamily\color{ETH_Grau},#1]%
-}
-
-\let\oldtexttt\texttt
-\renewcommand{\texttt}[1]{
-  \colorbox{ETH_Grau}{\oldtexttt{#1}}
 }
 
 \usepackage[none]{hyphenat}%%%%
@@ -161,19 +177,21 @@
     rulecolor=\color{ETH_Petrol},
 }
 
+%    morestring=[b][\color{black}]\",
+%    morecomment=[s][\color{blue}]{<}{>},
+%    alsoletter={-?}, % allowed in names
+%    morekeywords={@prefix,@base,@forSome,@forAll,@keywords},
+%    keywordstyle=\color{red},
 \lstdefinelanguage{bash}
 {
     columns=fullflexible,
-    keywordstyle=\color{red},
-    morekeywords={@prefix,@base,@forSome,@forAll,@keywords},
     morecomment=[l]{\#},
     tabsize=4,
-    alsoletter={-?}, % allowed in names
-    morecomment=[s][\color{blue}]{<}{>},
     basicstyle=\ttfamily\color{black},
     commentstyle=\sffamily\color{ETH_Grau},
     numberstyle=\tiny,
-    morestring=[b][\color{black}]\",
-    backgroundcolor=\color{ETH_Bronze},
-    rulecolor=\color{ETH_Petrol},
+    backgroundcolor=\color{ETH_Bronze!5},
+    frameround=tttt,
+    frame=single,
+    rulecolor=\color{ETH_Grun},
 }
