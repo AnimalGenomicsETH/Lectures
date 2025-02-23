@@ -1,0 +1,15 @@
+S	1	AAAAA
+S	2	C
+S	3	G
+S	4	TTTTT
+S	5	AAA
+S	6	TTT
+S	7	CCCCC
+L	1	+	2	+	0M
+L	1	+	3	+	0M
+L	2	+	4	+	0M
+L	3	+	4	+	0M
+L	4	+	5	+	0M
+L	4	+	6	+	0M
+L	5	+	7	+	0M
+L	6	+	7	+	0M
