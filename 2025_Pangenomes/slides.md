@@ -220,7 +220,7 @@ Heterogeneous methods lead to biases in N50 and genome size
 
 . . .
 
-\includesvglayer{0.8}{2025_Pangenomes/BPC_N50}{1:1,2:1,2,3}{2:3:4-5}
+\includesvglayer{0.8}{2025_Pangenomes/BPC_N50}{1:1,2:1,2,3}{2:3:4}
 
 ### Human comparison
 
@@ -228,14 +228,22 @@ Using 67 cattle assemblies versus 94 human haplotypes
 
 . . .
 
-|            | **Reference size** | **Nodes** | **Edges** | **1 bp nodes** | **Singletons** |
-|------------|:------------------:|:---------:|:---------:|:--------------:|:--------------:|
-| BTA1   |        158.5       |   11.34   |   15.84   |      7.37      |      1.21      |
-| HPRC7  |        160.6       |    5.17   |    7.25   |      3.31      |      0.75      |
-| BTA13  |        83.5        |    6.40   |    9.11   |      4.13      |      0.81      |
-| HPRC17 |        84.3        |    2.76   |    3.93   |      1.78      |      0.41      |
-| BTA28  |        45.9        |    3.93   |    5.57   |      2.56      |      0.45      |
-| HPRC21 |        45.1        |    2.76   |    3.88   |      1.73      |      0.57      |
+
+\begin{table}[]
+\rowcolors{3}{ETH_Grau!20}{white}
+\begin{tabular}{lccccc}
+\toprule
+ & \textbf{Reference size} & \textbf{Nodes} & \textbf{Edges} & \textbf{1 bp nodes} & \textbf{Singletons} \\
+\midrule
+BTA1 & 158.5 & 11.34 & 15.84 & 7.37 & 1.21 \\
+HPRC7 & 160.6 & 5.17 & 7.25 & 3.31 & 0.75 \\
+BTA13 & 83.5 & 6.40 & 9.11 & 4.13 & 0.81 \\
+HPRC17 & 84.3 & 2.76 & 3.93 & 1.78 & 0.41 \\
+BTA28 & 45.9 & 3.93 & 5.57 & 2.56 & 0.45 \\
+HPRC21 & 45.1 & 2.76 & 3.88 & 1.73 & 0.57 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 ## Interesting examples
 
