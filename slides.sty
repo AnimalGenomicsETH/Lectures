@@ -55,6 +55,9 @@
   {\protect\NoHyper#1\protect\endNoHyper}%
 }
 
+\usepackage[style=iso]{datetime2}
+%\renewcommand{\dateseparator}{--}
+
 \AtBeginSection[]{}
 \AtBeginSubsection[]{}
 
@@ -64,8 +67,6 @@
 \setbeamercolor*{structure}{fg=ETH_Blau}
 \setbeamercolor{titlelike}{parent=structure,fg=ETH_Blau}
 \setbeamercolor{date in head/foot}{parent=structure,fg=ETH_Blau}
-
-
 
 \setbeamertemplate{mini frame in other section}[default][0]
 \setbeamertemplate{mini frame in other subsection}[default][0]
@@ -78,9 +79,9 @@
 \setbeamertemplate{section in head/foot shaded}{\color{ETH_Grau}\insertsectionhead}
 
 \setbeamertemplate{itemize item}{\Large$\circ$}
-\setbeamertemplate{itemize subitem}{\tiny$\triangleright$}
+\setbeamertemplate{itemize subitem}{\raisebox{0.3ex}{\footnotesize$\triangleright$}}
 \setbeamertemplate{enumerate item}{\Large$\circ$}
-\setbeamertemplate{enumerate subitem}{\tiny$\triangleright$}
+\setbeamertemplate{enumerate subitem}{\raisebox{0.3ex}{\footnotesize$\triangleright$}}
 
 \setbeamercolor{section in toc}{fg=ETH_Rot}
 \setbeamercolor{subsection in toc}{fg=ETH_Grau}
@@ -88,7 +89,7 @@
 
 \setbeamertemplate{title page}{
   \vbox{}
-  \latexincludegraphics[width=0.2\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\latexincludegraphics[width=0.2\textwidth]{svg-inkscape/SNSF.pdf}
+  \latexincludegraphics[width=0.25\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\latexincludegraphics[width=0.25\textwidth]{svg-inkscape/SNSF.pdf}
   \vfill
   \vfill
   \begingroup
@@ -129,7 +130,6 @@
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
 %<--- Settings for code/quotes --->%
-
 \usepackage[listings,skins,breakable,xparse]{tcolorbox}
 \usepackage{fancyvrb,newverbs}
 
@@ -177,11 +177,6 @@
     rulecolor=\color{ETH_Petrol},
 }
 
-%    morestring=[b][\color{black}]\",
-%    morecomment=[s][\color{blue}]{<}{>},
-%    alsoletter={-?}, % allowed in names
-%    morekeywords={@prefix,@base,@forSome,@forAll,@keywords},
-%    keywordstyle=\color{red},
 \lstdefinelanguage{bash}
 {
     columns=fullflexible,

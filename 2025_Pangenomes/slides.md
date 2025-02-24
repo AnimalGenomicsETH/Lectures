@@ -6,8 +6,8 @@ author:
   - The BPC
 institute:
   - \inst{1}Animal Genomics, ETH Zürich
-  - \inst{*}alleonard@ethz.ch
-date: 2025/02/25
+  - \inst{*}\textcolor{ETH_Blau}{alleonard@ethz.ch}
+date: \today
 output:
   beamer_presentation:
     slide_level: 3
@@ -24,7 +24,7 @@ This mostly focuses on "**sequence/variation graph**" pangenomics
 
 . . .
 
-\only<2>{\includesvg[width=0.8\textwidth]{figures/BPC_diagram.svg}}
+\only<2>{\includesvg[width=0.9\textwidth]{figures/BPC_diagram.svg}}
 
 ### Overview {.plain .noframenumbering}
 
@@ -65,7 +65,7 @@ Intrabreed diversity and interbreed similarity
 
 . . .
 
-\only<2-3>{\includegraphics[width=0.8\textwidth]{figures/breed_concept.png}}
+\only<2-3>{\includegraphics[width=0.6\textwidth]{figures/breed_concept.png}}
 
 . . .
 
@@ -105,7 +105,7 @@ Building (or even *defining*) a good graph is **\textcolor{ETH_Rot}{\underline{h
 
 . . .
 
-\only<4>{Does \emph{good} depend on the question context?}
+\only<4>{Does \emph{good} depend on the question \emph{context}?}
 
 ### *Better* graphs?
 
@@ -118,7 +118,7 @@ Whole-genome alignments can contain unintentional mappings
 
 \includesvglayer{0.85}{figures/windowed_building}{1:1,2:1,2,3:1,2,3,4}{2:3:4:5-6}
 
-\only<6>{Can handle QTLs, chromosome communities, but not translocations}
+\only<6>{Subgraphs can handle QTLs, chromosome communities, but not translocations}
 
 ### Pangenomic read alignment
 
@@ -144,7 +144,7 @@ Big graphs are
 
 . . .
 
-How can we handle this (**growing**) problem?
+How can we handle this (**rapidly growing**) problem?
 
 ### *Personalised* pangenomic read alignment
 
@@ -211,10 +211,16 @@ Ground-up collaboration leads to *heterogeneous* quality
 - Scaffolding 
 
 . . .
-TODO: can we tikz node place this overlapping text?
-\includesvglayer{0.6}{2025_Pangenomes/BPC_N50}{1:1,2:1,2,3}{2:3:4-5}
 
-\only<5>{Some assemblies failing QC represented novel breeds}
+Some assemblies failing QC represented novel breeds
+
+### Assembly contiguity
+
+Heterogeneous methods lead to biases in N50 and genome size
+
+. . .
+
+\includesvglayer{0.8}{2025_Pangenomes/BPC_N50}{1:1,2:1,2,3}{2:3:4-5}
 
 ### Human comparison
 
@@ -239,7 +245,7 @@ White-headness in Simmental/Hereford associated with a 14.3 Kb repetitive segmen
 
 . . .
 
-\only<2->{\latexincludegraphics[width=0.4\textwidth]{2025_Pangenomes/KIT_jaccard.pdf}}\only<3>{\latexincludegraphics[width=0.4\textwidth]{2025_Pangenomes/KIT_example.png}}
+\only<2->{\latexincludegraphics[width=0.4\textwidth]{2025_Pangenomes/KIT_jaccard.pdf}}\only<3>{\latexincludegraphics[width=0.5\textwidth]{2025_Pangenomes/KIT_example.png}}
 
 ### *THRSP* deletion
 
@@ -270,17 +276,31 @@ Is this **\textcolor{ETH_Grun}{biological}** or **\textcolor{ETH_Rot}{technical}
 \setcounter{section}{0}
 
  - Pangenomes can handle "mixed" genomes
- - Pangenomes are still hard to work with
- - Pangenomes are a nice way to analyse many assemblies
+   - Tradeoff of including diverse samples and maintaining pangenome quality
+\pause\vfill
+ - Pangenomes are still challenging to work with
+\pause\vfill
+ - Pangenomes do offer a new approach/perspective over linear references
+   - *Contextualise* which regions will benefit, pangenomes are not a silver bullet
 
 ### Acknowledgements
 
-Thanks to  Hubert Pausch \& Animal Genomics ETH
+Hubert Pausch \& Animal Genomics group
 
-\uncover<3>{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node[xshift=0cm,yshift=0cm,inner sep=0] at (current page.south west){\latexincludegraphics[width=0.4\textwidth]{Animal_Genomics_ETH.jpg}};
-        
-\end{tikzpicture}}
+\begin{tikzpicture}[remember picture,overlay]
+  \node[xshift=11.7cm,yshift=6cm,inner sep=0] at (current page.south west){\latexincludegraphics[width=0.5\textwidth]{Animal_Genomics_ETH.jpg}};
+  \node[xshift=9.8cm,yshift=3cm,inner sep=0] at (current page.south west){\latexincludegraphics[width=0.3\textwidth]{svg-inkscape/SNSF.pdf}};
+   \node[xshift=13.5cm,yshift=3cm,inner sep=0] at (current page.south west){\latexincludegraphics[width=0.15\textwidth]{svg-inkscape/BPC_logo.pdf}};
+\end{tikzpicture}
 
-Pangenom**ETH** mailing list
+Also thanks to BPC
+
+ - Sample contributors 
+ - Steering committee
+ - Many other collaborators
+
+\vfill
+
+\vfill
+
+Interest in a "Pangenom**ETH**" mailing list?
