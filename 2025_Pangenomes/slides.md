@@ -89,7 +89,7 @@ Sequence alignment confuses **\textcolor{ETH_Grun}{divergence}** with **\textcol
 
 . . .
 
-\includesvglayer{0.9}{figures/mapping_bias}{1:1,2:1,2,3:1,2,3,4:1,2,3,4,5}{2:3:4:5:6}
+\includesvglayer{0.9}{figures/mapping_bias}{1:1,2:1,2,3:1,2,3,4}{2:3:4:5-6}
 
 \only<6>{Pangenomes mitigate reference bias}
 

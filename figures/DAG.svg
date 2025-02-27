@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="167.25613mm"
+   height="55.697563mm"
+   viewBox="0 0 474.11167 157.88298"
+   version="1.2"
+   id="svg59"
+   sodipodi:docname="DAG.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5384068"
+     inkscape:cx="310.71106"
+     inkscape:cy="100.75358"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="1440"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer5" />
+  <title
+     id="title1">Qt SVG Document</title>
+  <desc
+     id="desc1">Generated with Qt</desc>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 0.60355339,3 -2.3964466,0 0.60355339,-3"
+         sodipodi:nodetypes="ccc"
+         id="path7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0.20607984"
+       refY="0.11448894"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Qt SVG Document</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="1"
+     transform="translate(62.56405,150.71304)"
+     style="display:inline">
+    <g
+       id="g3"
+       transform="translate(43.761471,-30.708033)">
+      <g
+         id="g2"
+         transform="translate(-173.053,63.006804)">
+        <path
+           vector-effect="none"
+           fill-rule="nonzero"
+           d="M 106.67788,-93.86311 H 67.214751 v 5.77057 h 39.463129 v -5.77057"
+           id="path30-4"
+           style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           vector-effect="none"
+           fill-rule="nonzero"
+           d="m 218.7541,-93.86311 h -39.46314 v 5.77057 h 39.46314 v -5.77057"
+           id="path30-4-8"
+           style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           vector-effect="none"
+           fill-rule="nonzero"
+           d="m 142.98442,-88.185865 h 36.30654 v -5.58392 h -36.30654 v 5.58392"
+           id="path34-6"
+           style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#a7117a;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           vector-effect="none"
+           fill-rule="nonzero"
+           d="m 106.67788,-88.185865 h 36.30654 v -5.58392 h -36.30654 v 5.58392"
+           id="path34-8-5"
+           style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#a7117a;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <g
+         id="g1"
+         transform="translate(-173.053,63.457764)">
+        <g
+           id="g7-5"
+           transform="translate(-81.022595,-29.214663)">
+          <path
+             vector-effect="none"
+             fill-rule="nonzero"
+             d="m 187.21296,-78.75006 h -39.46313 v 5.77057 h 39.46313 v -5.77057"
+             id="path30-4-2"
+             style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             vector-effect="none"
+             fill-rule="nonzero"
+             d="m 299.7767,-78.75006 h -76.2572 v 5.77057 h 76.2572 v -5.77057"
+             id="path30-4-8-1"
+             style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77449;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             vector-effect="none"
+             fill-rule="nonzero"
+             d="m 187.21296,-73.072815 h 36.30654 v -5.58392 h -36.30654 v 5.58392"
+             id="path34-8-5-0"
+             style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#a7117a;fill-opacity:1;stroke:none;stroke-width:1.77449;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none"
+             sodipodi:nodetypes="ccccc" />
+        </g>
+      </g>
+      <path
+         vector-effect="none"
+         fill-rule="nonzero"
+         d="M -106.32576,-52.387036 H 45.701097 v -5.77057 H -106.32576"
+         id="path46-2"
+         style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:2.79885;stroke-linecap:square;stroke-linejoin:bevel"
+         sodipodi:nodetypes="cccc" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:13.6643px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.375813"
+         x="-93.291733"
+         y="-7.9139266"
+         id="text60-6-1"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.375813"
+           x="-93.291733"
+           y="-7.9139266"
+           id="tspan7">e.g., tandem repeats</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="2"
+     transform="translate(62.56405,150.71304)">
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="M 308.35246,-20.282453 H 236.66952"
+       id="path18"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882;marker-start:url(#marker4)"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 260.20185,-38.466808 c -8.87125,0 -8.87125,-25.371257 12.66637,-25.371257 21.53762,0 21.53762,25.371257 12.66637,25.371257"
+       id="path21"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882;marker-start:url(#ArrowWide);marker-mid:url(#marker7)"
+       sodipodi:nodetypes="csc" />
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 285.9655,-41.733927 h -25.33274 v 5.77057 h 25.33274 v -5.77057"
+       id="path38"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#a7117a;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 311.2852,-132.49413 c 8.86771,0.22337 40.96034,27.85612 49.83159,27.85612"
+       id="path6"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 175.80397,-104.63801 c 8.87125,0 22.59963,-28.98964 31.47088,-28.92843"
+       id="path9"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882;marker-end:url(#marker2)"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 237.23437,-20.334633 c 8.87125,0 13.63673,-18.604748 22.50798,-18.543538"
+       id="path9-6"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 308.61496,-19.844244 c -8.87125,0 -13.63673,-18.604747 -22.50798,-18.543537"
+       id="path9-6-7"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="M 175.80397,-104.63801 H 359.61679"
+       id="path12"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882;marker-end:url(#marker2)"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 242.73781,-133.01784 c 8.87125,0.0747 108.00773,28.37983 116.87898,28.37983"
+       id="path24"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66138;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="evenodd"
+       d="m 244.23781,-133.01784 c 8.87125,0.0747 21.82708,-0.21101 30.69833,-0.12017"
+       id="path27"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:2.66173;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:0.705882;marker-end:url(#marker2)"
+       sodipodi:nodetypes="cc" />
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 274.90598,-130.25272 h 36.30654 v -5.58392 h -36.30654 v 5.58392"
+       id="path34"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#a7117a;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 207.10555,-130.25272 h 36.30654 v -5.58392 h -36.30654 v 5.58392"
+       id="path34-8"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#a7117a;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 109.66549,-101.75273 h 66.13848 v -5.77057 h -66.13848"
+       id="path46"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="cccc" />
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 361.11679,-101.75273 h 50.43114 v -5.77057 h -50.43114 v 5.77057"
+       id="path54"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:17.4524px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.480001"
+       x="71.345695"
+       y="-98.704201"
+       id="text60"><tspan
+         sodipodi:role="line"
+         id="tspan60"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.480001"
+         x="71.345695"
+         y="-98.704201">DAG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:17.4524px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.480001"
+       x="36.720116"
+       y="-14.305885"
+       id="text60-6"><tspan
+         sodipodi:role="line"
+         id="tspan60-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.480001"
+         x="36.720116"
+         y="-14.305885">non-DAG</tspan></text>
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 236.80766,-23.124986 h -94.96318 v 5.77057 h 94.96318 v -5.77057"
+       id="path30"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       vector-effect="none"
+       fill-rule="nonzero"
+       d="m 402.5652,-23.124986 h -94.96141 v 5.77057 h 94.96141"
+       id="path50"
+       style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.77425;stroke-linecap:square;stroke-linejoin:bevel"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="3"
+     transform="translate(62.56405,150.71304)"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="282.84525"
+       y="-139.24052"
+       id="text60-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="282.84525"
+         y="-139.24052">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9">=1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="213.92639"
+       y="-139.26331"
+       id="text60-3-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="213.92639"
+         y="-139.26331">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9-0">=2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="131.32773"
+       y="-110.2735"
+       id="text60-3-2-8-7"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="131.32773"
+         y="-110.2735">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9-0-2">=3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="374.92532"
+       y="-110.2735"
+       id="text60-3-2-8-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8-9"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="374.92532"
+         y="-110.2735">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9-0-2-6">=3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="177.91907"
+       y="-25.830704"
+       id="text60-3-2-8-7-4"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8-0"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="177.91907"
+         y="-25.830704">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9-0-2-8">=3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="343.67749"
+       y="-25.830704"
+       id="text60-3-2-8-7-0"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8-6"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="343.67749"
+         y="-25.830704">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9-0-2-0">=3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="259.40579"
+       y="-69.845024"
+       id="text60-3-2-8-7-2"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8-98"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="259.40579"
+         y="-69.845024">f<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan9-0-2-1">=?</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="4"
+     transform="translate(62.56405,150.71304)"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="238.03911"
+       y="-72.851997"
+       id="text60-3-2-8-7-0-6"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8-6-1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="238.03911"
+         y="-72.851997">d<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan10">=100bp</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       x="255.24899"
+       y="6.9876642"
+       id="text60-3-2-8-7-0-6-6"><tspan
+         sodipodi:role="line"
+         id="tspan60-7-4-1-8-6-1-9"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         x="255.24899"
+         y="6.9876642">d<tspan
+   style="font-style:normal;stroke-width:0.455724"
+   id="tspan10-0">=?</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.750001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 172.87091,-99.711539 c 0,13.61761 93.27281,2.702478 94.49231,6.549808 0.71514,2.25616 1.20654,6.99709 1.20654,6.99709 0,0 0.63271,-4.70092 1.20655,-6.99709 0.98255,-3.93157 95.60073,6.909052 95.60073,-6.549808"
+       id="path8"
+       sodipodi:nodetypes="cscsc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.750001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 228.53101,-15.565779 c 0,12.4110661 37.77277,1.202477 38.99227,5.049808 0.71514,2.2561597 1.20654,6.99709 1.20654,6.99709 0,0 0.63271,-4.7009203 1.20655,-6.99709 0.98255,-3.931571 40.10068,6.685417 40.10068,-5.049808"
+       id="path8-0"
+       sodipodi:nodetypes="cscsc" />
+  </g>
+</svg>

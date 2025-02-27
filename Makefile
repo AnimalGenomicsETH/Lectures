@@ -11,6 +11,7 @@ svg-inkscape/%.pdf: %.svg
 
 clean:
 	rm -f *.pdf
+	rm -f *.tex
 	rm -rf svg-inkscape
 
 .PHONY: clean

@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="279.21771mm"
+   height="201.47096mm"
+   viewBox="0 0 791.48388 571.09788"
+   version="1.2"
+   id="svg429"
+   sodipodi:docname="tangled.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview429"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.50721402"
+     inkscape:cx="1014.3647"
+     inkscape:cy="451.48594"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="1440"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg429" />
+  <title
+     id="title1">Qt SVG Document</title>
+  <desc
+     id="desc1">Generated with Qt</desc>
+  <defs
+     id="defs1" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 616.47561,441.33017 c 6.48885,0.75669 9.74954,-6.35366 7.94939,-12.63278"
+     id="path6"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 544.32308,198.74388 c 6.24167,1.92656 9.70005,8.91019 7.64696,15.11105"
+     id="path9"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 375.2336,114.43801 c -1.92224,6.24188 -1.78154,8.60252 -1.518,15.12822"
+     id="path12"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 193.22981,441.95122 c -3.62305,-5.43533 -8.69927,2.88847 -14.60076,5.6902"
+     id="path15"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 338.4065,193.93552 c -6.1604,2.16941 -9.80222,3.8977 -15.43909,7.20092"
+     id="path18"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 332.82156,553.66444 c -6.48178,-0.81182 -9.99386,-1.86972 -15.89424,-4.67151"
+     id="path21"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 252.00287,512.1211 c -5.42631,-3.63681 -7.94896,-5.79156 -12.34635,-10.62185"
+     id="path24"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 452.66276,169.6383 c 3.21061,-5.68803 -20.24928,-1.38208 -15.77492,-6.14195"
+     id="path27"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 125.6181,473.41068 c -5.84601,2.91312 -7.04431,3.59292 -12.69399,6.87175"
+     id="path30"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 563.27615,243.52874 c -2.00066,-6.2182 8.91291,-7.1306 11.94307,-12.91696"
+     id="path33"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 425.00939,229.40483 c 1.61415,-6.32889 2.07757,-7.3106 4.61468,-13.3299"
+     id="path36"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 361.62349,530.20253 c 2.81573,5.89435 4.62304,7.46391 10.51913,10.27592"
+     id="path39"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 544.32308,198.74388 c 6.24167,1.92656 6.78916,-7.79979 8.6456,-14.06272"
+     id="path42"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 367.17444,376.23501 c 5.83595,2.93405 -15.52574,11.83009 -13.22302,5.71759"
+     id="path45"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 515.50574,297.80464 c 4.1699,-5.02766 5.68149,-7.34203 8.48108,-13.24433"
+     id="path48"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 377.73663,389.30542 c -1.47744,-6.36325 9.51647,-1.17186 15.68429,-3.32313"
+     id="path51"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 503.42963,104.09405 c -6.20225,2.0482 -9.00805,3.20831 -13.84813,7.59559"
+     id="path54"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 554.94934,34.053032 c -2.20219,-6.149788 -3.75762,-8.580563 -9.48248,-11.726677"
+     id="path57"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 340.98441,460.30063 c -0.73459,6.4911 -0.91327,8.68887 0.72591,15.01272"
+     id="path60"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 552.93094,417.41329 c 5.35847,3.73658 7.81108,3.65846 13.48476,6.89611"
+     id="path63"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 597.47723,358.7443 c -2.5337,6.02073 -2.71938,13.96277 1.13237,19.23953"
+     id="path66"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 247.64564,258.78752 c 3.19939,-5.69472 3.48948,-11.17515 8.83667,-14.92728"
+     id="path69"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 320.42607,82.194792 c 4.64408,-4.5936 7.61344,-6.49548 13.72169,-8.81294"
+     id="path72"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 550.20169,228.74543 c 2.96688,5.81976 11.0738,8.56511 13.07446,14.78331"
+     id="path75"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 425.98367,53.864202 c -4.22119,4.98514 -9.82343,-1.7362 -16.26611,-0.65964"
+     id="path78"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 425.98367,53.864202 c -4.22119,4.98514 7.57141,6.652 12.08534,11.37387"
+     id="path81"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 367.17444,376.23501 c 5.83595,2.93405 4.62338,-7.23349 8.68339,-12.35027"
+     id="path84"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 551.97004,213.85493 c 2.05309,-6.20086 9.77525,3.94549 14.00715,8.92119"
+     id="path87"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 674.3902,438.42596 c 4.75975,4.47441 6.73286,6.32619 11.44208,10.85234"
+     id="path90"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 59.011285,514.6151 c -5.561638,3.42489 -6.30411,3.83194 -11.525934,7.75579"
+     id="path93"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882"
+     sodipodi:nodetypes="cc" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 431.3841,546.9863 c 6.43966,-1.09086 10.13463,-5.92689 15.60411,-9.49757"
+     id="path96"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 455.40955,359.97326 c 5.85931,-2.88751 9.26529,-4.0816 13.6717,-8.904"
+     id="path99"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 204.35469,348.77081 c 1.41967,-6.37632 2.68853,-10.02136 5.42408,-15.9525"
+     id="path102"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 431.3841,546.9863 c 6.43966,-1.09086 -10.6208,5.41869 -17.10016,6.25052"
+     id="path105"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 409.71756,53.204562 c 6.44268,-1.07656 -9.27087,1.63034 -12.32673,7.40323"
+     id="path108"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 266.58527,153.39369 c 1.58083,-6.33785 3.00913,-9.46937 6.71058,-14.85156"
+     id="path111"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="M 489.07503,4.543935 C 482.5817,3.832848 479.8896,5.132747 474.55775,8.906827"
+     id="path114"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 392.72791,304.04412 c -5.49796,3.5287 -7.58148,6.07018 -10.45681,11.93574"
+     id="path117"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 410.8074,294.37581 c 2.44974,6.0555 -1.89791,-8.25217 0.0158,-14.49761"
+     id="path120"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 420.9836,537.33801 c -2.30125,-6.11347 -2.77221,-7.37751 -4.94695,-13.53714"
+     id="path123"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 530.20055,471.91582 c -4.23389,4.97481 -7.80813,8.63346 -12.78094,12.86897"
+     id="path126"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 598.6096,377.98383 c -3.85175,-5.27676 -6.58468,10.99405 -10.20928,16.42948"
+     id="path129"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 597.47723,358.7443 c -2.5337,6.02073 -2.82244,-12.28238 -4.64051,-18.55698"
+     id="path132"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 417.58103,309.74704 c 3.91937,-5.22579 -4.32389,-9.31573 -6.77363,-15.37123"
+     id="path135"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 598.6096,377.98383 c -3.85175,-5.27676 10.53932,4.48108 15.64518,8.55543"
+     id="path138"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 417.58103,309.74704 c 3.91937,-5.22579 7.83175,4.23302 12.98215,8.25102"
+     id="path141"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 736.87848,499.23194 c 4.63794,4.59995 5.49601,5.72371 10.21972,10.23561"
+     id="path144"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882"
+     sodipodi:nodetypes="cc" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 353.95142,381.9526 c -2.30272,6.1125 -0.7141,8.98567 -2.17583,15.35238"
+     id="path147"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 581.97594,94.495662 c -3.90793,-5.23398 -8.87814,-6.44871 -15.33563,-5.46349"
+     id="path150"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 493.75062,129.2298 c 4.07622,5.10438 7.37721,8.97047 10.62658,14.63786"
+     id="path153"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 550.20169,228.74543 c 2.96688,5.81976 -10.06058,1.0149 -16.24903,3.10544"
+     id="path156"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 608.24654,280.7639 c 3.38119,5.588 4.25118,8.3079 3.94518,14.83244"
+     id="path159"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 569.36522,115.85976 c 1.15505,-6.42891 0.55279,-9.17796 -0.0979,-15.67785"
+     id="path162"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 446.98821,537.48873 c -5.46948,3.57068 10.11856,11.16978 4.79419,14.95351"
+     id="path165"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 397.86184,470.41631 c -2.04119,-6.20583 -2.50307,-8.14415 -4.08801,-14.48033"
+     id="path168"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 452.66276,169.6383 c 3.21061,-5.68803 9.39495,3.94449 15.64583,5.84045"
+     id="path171"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 605.64084,164.69883 c 2.39484,-6.0768 3.34763,-8.78776 1.9173,-15.16182"
+     id="path174"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 380.41706,201.43377 c 0.90768,6.46807 1.58308,9.84502 3.42874,16.11115"
+     id="path177"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 247.64564,258.78752 c 3.19939,-5.69472 3.0896,8.40093 6.36046,14.05528"
+     id="path180"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 193.22981,441.95122 c -3.62305,-5.43533 -2.15851,-10.10916 -1.4669,-16.60524"
+     id="path183"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 489.45431,367.61741 c 4.84355,4.38222 7.20654,7.99852 12.35694,12.01652"
+     id="path186"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 256.48231,243.86024 c -5.34719,3.75213 -2.47158,-9.79462 -1.95987,-16.30599"
+     id="path189"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 367.17444,376.23501 c 5.83595,2.93405 9.08475,6.70716 10.56219,13.07041"
+     id="path192"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 436.88784,163.49635 c -4.47436,4.75987 -10.60381,2.37092 -16.87467,4.20157"
+     id="path195"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 290.56266,327.34778 c 3.98291,5.17646 6.05053,6.95425 11.42816,10.66181"
+     id="path198"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="evenodd"
+     d="m 469.28315,256.26686 c -6.0248,2.52469 -8.36348,3.87753 -13.85088,7.42166"
+     id="path201"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:none;stroke:#000000;stroke-width:1.95966;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:0.705882" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="M 543.26472,26.333756 516.88679,11.837684 519.08893,7.830283 518.5911,12.375108 488.5772,9.08876 489.57298,-9.3796539e-4 519.58639,3.284201 c 0.60038,0.06616 1.18001,0.250936 1.7048,0.538632 l -1.2e-4,4.9e-5 26.37805,14.496022 -4.4044,8.014852"
+     id="path204"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 386.37705,317.99172 -14.96162,30.52301 -4.10646,-2.01307 4.27837,1.61235 -13.35634,35.45044 -8.55794,-3.22419 13.35755,-35.45094 c 0.0506,-0.13506 0.10869,-0.26897 0.17241,-0.39952 v 0 l 14.96162,-30.52302 8.21241,4.02494"
+     id="path208"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 205.62629,330.90314 17.08224,-37.04234 c 0.0522,-0.11033 0.10667,-0.21873 0.16622,-0.32499 v 0 l 20.78463,-36.98844 7.97253,4.48031 -20.78463,36.98844 -3.98627,-2.24015 4.15248,1.91517 -17.08224,37.04234 -8.30496,-3.83034"
+     id="path212"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 378.28362,129.38287 1.361,33.78246 -4.56802,0.18336 4.52869,-0.63453 5.33998,38.08387 -9.0557,1.26977 -5.34118,-38.08337 c -0.0231,-0.1529 -0.0364,-0.30272 -0.0422,-0.45139 l 10e-4,-5e-4 -1.36051,-33.78125 9.13676,-0.36842"
+     id="path216"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 115.21998,484.2382 -32.403065,21.08159 -2.29537,-3.95456 2.39846,3.89258 -21.51026,13.24987 -4.79621,-7.78687 21.51076,-13.24865 c 0.0321,-0.0216 0.06517,-0.0436 0.10067,-0.061 l 0.001,-4.9e-4 32.402565,-21.0828 4.59124,7.91032"
+     id="path220"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel"
+     sodipodi:nodetypes="cccccccsccc" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 454.43111,556.17024 -19.81156,14.08181 c -0.2786,0.19877 -0.58606,0.36842 -0.91733,0.50406 -2.33704,0.95688 -5.00728,-0.16195 -5.96416,-2.49898 -0.95688,-2.33704 0.16195,-5.00728 2.49898,-5.96416 1.6213,-0.66383 3.40306,-0.32893 4.66074,0.71887 l -7.2068,5.1234 -10.98724,-29.18604 8.55851,-3.22188 10.98724,29.18603 -4.27986,1.61119 -2.64822,-3.7268 19.81157,-14.0818 5.29813,7.4543"
+     id="path224"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 374.1104,536.35102 25.61241,12.21197 -1.96778,4.12743 -0.7644,-4.50799 33.62907,-5.70412 1.5293,9.01719 -33.62957,5.70292 c -0.94607,0.16149 -1.89778,0.0161 -2.73217,-0.38056 v 0 l -25.61241,-12.21197 3.93555,-8.25487"
+     id="path228"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 421.29385,172.0877 -41.36825,12.0718 -1.28189,-4.38928 1.51903,4.31336 -40.23721,14.16531 -3.03636,-8.62602 40.23672,-14.16651 c 0.0806,-0.0273 0.15921,-0.0525 0.23714,-0.0759 v 0 l 41.36946,-12.0723 2.56136,8.77956"
+     id="path232"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 401.43087,62.748292 -13.32696,25.16826 -4.04125,-2.14 4.36985,1.34619 -8.82786,28.660968 -8.7409,-2.69189 8.82906,-28.661458 c 0.0851,-0.27483 0.19528,-0.54017 0.3286,-0.79381 l 10e-4,-4.9e-4 13.32696,-25.16827 8.08129,4.2805"
+     id="path236"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 520.3851,488.26592 -33.77501,28.76902 c -0.14479,0.12564 -0.30057,0.24165 -0.46323,0.34778 l -10e-4,4.9e-4 -36.65809,23.93421 -4.99871,-7.65737 36.65688,-23.93371 2.49936,3.82868 -2.9655,-3.48112 33.77453,-28.77023 5.93098,6.96225"
+     id="path240"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 588.44518,341.46025 -13.92196,-48.05464 4.39216,-1.27177 -4.35303,1.39975 -15.63874,-48.6039 8.70568,-2.80075 15.63874,48.6039 c 0.0142,0.0436 0.0278,0.0874 0.0399,0.12908 l -8.6e-4,-10e-4 13.9216,48.05479 -8.78346,2.5446"
+     id="path244"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 406.4505,278.53882 7.87833,-25.72548 4.37221,1.33817 -4.43069,-1.12929 6.30836,-24.74668 8.86186,2.25979 -6.30885,24.74547 c -0.0176,0.0707 -0.0369,0.14077 -0.058,0.21008 v 0 l -7.87954,25.72598 -8.7437,-2.67804"
+     id="path248"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 477.1991,12.639258 -26.2211,18.555484 -2.64195,-3.732186 3.49083,2.954046 -22.35359,26.40214 -6.97924,-5.90908 22.35238,-26.401647 c 0.2451,-0.290934 0.52851,-0.553794 0.84646,-0.777147 l 0.002,-9.9e-4 26.2211,-18.555482 5.2827,7.464862"
+     id="path252"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 689.00104,445.9819 29.6479,28.72972 c 0.0176,0.0155 0.0348,0.0322 0.0514,0.0486 l -10e-6,0.002 21.39827,21.22352 -6.44009,6.49292 -21.39815,-21.22356 3.21996,-3.2465 -3.16865,3.29664 -29.64748,-28.72904 6.33689,-6.59396"
+     id="path256"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel"
+     sodipodi:nodetypes="ccccccccccc" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 346.13636,474.16605 7.47945,28.86611 -4.42604,1.1473 4.12531,-1.97142 12.43421,26.02428 -8.25232,3.94213 -12.433,-26.02478 c -0.0375,-0.0778 -0.0726,-0.15662 -0.10577,-0.23762 -0.0797,-0.19465 -0.14412,-0.38991 -0.19496,-0.5865 v 0 l -7.47896,-28.8649 8.85208,-2.2946"
+     id="path260"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 504.6239,376.02876 25.75032,20.08929 -2.81265,3.60516 2.61497,-3.75009 25.36937,17.69007 -5.23114,7.50069 -25.36937,-17.69008 c -0.0668,-0.046 -0.13177,-0.0943 -0.19598,-0.14422 l -4.9e-4,-0.001 -25.75033,-20.08928 5.6253,-7.21033"
+     id="path264"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 568.68219,420.33918 24.62953,14.05575 -2.26649,3.97023 0.5294,-4.54081 25.4311,2.96331 -1.05902,9.08453 -25.4316,-2.96452 c -0.6134,-0.0707 -1.20452,-0.26631 -1.73709,-0.57059 v 0 l -24.62831,-14.05625 4.53248,-7.94165"
+     id="path268"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 249.9636,227.19458 2.96318,-37.67476 c 0.0203,-0.25393 0.0607,-0.50342 0.1218,-0.74725 l 0.001,-5e-4 9.09965,-36.4858 8.87289,2.21433 -9.10014,36.4846 -4.43705,-1.10692 4.55835,0.35846 -2.9627,37.67598 -9.11718,-0.71814"
+     id="path272"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 50.231489,526.02653 -27.804245,23.50297 -2.747841,-3.65636 2.961153,3.48432 L 5.922306,563.5675 0,556.59886 16.71825,542.38882 c 0.0689,-0.0593 0.140008,-0.11661 0.212597,-0.17033 l 0.0024,-9.9e-4 27.805949,-23.50226 5.492275,7.31129"
+     id="path276"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel"
+     sodipodi:nodetypes="ccccccccccc" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 389.33778,457.04503 -7.95934,-31.82761 c -0.008,-0.0264 -0.0143,-0.052 -0.0195,-0.0753 l 10e-4,-5e-4 -8.07786,-34.80295 8.90826,-2.06773 8.07786,34.80295 -4.45388,1.03447 4.43556,-1.11025 7.95934,31.8276 -8.87161,2.21931"
+     id="path280"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 465.70508,347.98497 24.41244,-26.72138 3.37566,3.08308 -3.51989,-2.91815 22.01256,-26.54202 7.03907,5.83799 -22.01256,26.54203 c -0.0447,0.0564 -0.0927,0.11138 -0.14131,0.16515 l -0.002,-7.1e-4 -24.41194,26.72259 -6.75233,-6.16858"
+     id="path284"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 603.09646,150.53796 -6.66527,-29.70486 4.46118,-1.00216 -3.66349,2.73664 -18.91692,-25.336478 7.32796,-5.47087 18.91655,25.335218 c 0.22613,0.30128 0.41797,0.63777 0.56747,1.0029 0.099,0.2418 0.17584,0.48704 0.2312,0.73259 l -10e-4,-9.6e-4 6.66577,29.70607 -8.92335,2.00191"
+     id="path288"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 388.23112,216.25335 11.01941,37.42569 -4.38654,1.29206 4.2385,-1.71566 15.94391,39.40592 -8.4775,3.43011 -15.9439,-39.40592 c -0.0574,-0.14025 -0.1071,-0.28225 -0.14803,-0.4236 v 0 l -11.0182,-37.42619 8.77235,-2.58241"
+     id="path292"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 508.3443,141.59256 23.01295,40.13258 c 0.0371,0.0638 0.0727,0.12973 0.10664,0.19632 l 3.7e-4,0.001 22.81143,44.74666 -8.14739,4.15326 -22.81178,-44.7465 4.074,-2.07606 -3.96638,2.27339 -23.01282,-40.13121 7.93298,-4.5497"
+     id="path296"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 372.27717,361.04229 20.34088,-25.62887 3.58115,2.84365 -3.65724,-2.74332 21.38061,-28.50954 7.31691,5.48566 -21.38182,28.51003 c -0.0242,0.0339 -0.0502,0.0671 -0.0749,0.0998 l -0.002,-7.2e-4 -20.34088,25.62888 -7.16302,-5.68561"
+     id="path300"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 411.72598,525.32304 -9.01954,-25.54907 c -0.0117,-0.0319 -0.0216,-0.0631 -0.0323,-0.0927 v 0 l -9.15576,-27.83671 8.68641,-2.8578 9.15698,27.83621 -4.34296,1.42951 4.31067,-1.52216 9.01904,25.54785 -8.62255,3.04482"
+     id="path304"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 616.75946,295.8112 -1.4866,31.70571 c -0.025,0.53961 -0.146,1.06773 -0.35296,1.55904 v 0 l -13.22851,31.4411 -8.42881,-3.5467 13.22802,-31.4409 4.2149,1.77386 -4.56773,-0.21486 1.48659,-31.70571 9.1351,0.42846"
+     id="path308"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 414.86587,557.77152 -41.91918,5.37861 c -0.38752,0.05 -0.77303,0.0497 -1.1497,0.002 v 0 l -39.5432,-4.951 1.13553,-9.07351 39.54392,4.94929 -0.56898,4.53725 -0.58072,-4.5352 41.91797,-5.37812 1.16436,9.07062"
+     id="path312"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 187.21568,424.86297 4.08487,-38.37967 c 0.0182,-0.17264 0.0462,-0.34221 0.0834,-0.50991 v 0 l 8.50642,-38.19671 8.92685,1.98755 -8.50641,38.19671 -4.46307,-0.99463 4.54651,0.48472 -4.08487,38.37966 -9.09374,-0.96772"
+     id="path316"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 325.27993,205.08116 -33.92961,19.88211 -2.31131,-3.94521 2.62651,3.74274 -32.5567,22.84219 -5.25302,-7.48549 32.5562,-22.84339 c 0.10084,-0.0709 0.20607,-0.13802 0.31279,-0.20147 l 0.002,-9.9e-4 33.9289,-19.88041 4.62383,7.88992"
+     id="path320"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 469.63582,171.10396 37.1305,11.26381 c 0.008,0.001 0.0143,0.004 0.0219,0.005 v 0 l 38.88388,12.00278 -2.69738,8.73751 -38.8835,-12.00152 1.34789,-4.36914 -1.32673,4.376 -37.13171,-11.26331 2.65517,-8.75129"
+     id="path324"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 571.16792,228.49 17.99061,-34.36215 4.05129,2.12177 -4.25463,-1.67712 12.43151,-31.54958 8.50864,3.35308 -12.43151,31.54958 c -0.0598,0.15153 -0.12785,0.2994 -0.20322,0.4446 v 0 l -17.9906,34.36216 -8.10209,-4.24234"
+     id="path328"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 304.58698,334.24461 29.20131,20.136 -2.59545,3.76328 2.05425,-4.08519 35.9816,18.09112 -4.1085,8.17039 -35.9811,-18.08992 c -0.18685,-0.0943 -0.36919,-0.20176 -0.54191,-0.32021 l 7.1e-4,-0.002 -29.20202,-20.1343 5.19111,-7.52947"
+     id="path332"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 425.41012,214.29928 9.34009,-22.16228 c 0.0678,-0.16189 0.14467,-0.31899 0.23174,-0.47181 v 0 l 13.69911,-24.27315 7.9639,4.49372 -13.69861,24.27437 -3.9822,-2.24747 4.21273,1.77615 -9.33887,22.16178 -8.42789,-3.55131"
+     id="path336"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 441.37365,62.079442 27.79664,29.07972 c 0.0942,0.0956 0.18259,0.1977 0.26666,0.30303 l 9.9e-4,0.002 27.88497,34.912008 -7.14579,5.70686 -27.88447,-34.910808 3.57179,-2.85438 -3.30414,3.15984 -27.79714,-29.08093 6.61049,-6.31776"
+     id="path340"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 257.96313,270.55348 16.31394,28.20076 -3.95824,2.28982 3.62375,-2.78954 20.24262,26.30421 -7.24679,5.57739 -20.24262,-26.30421 c -0.12184,-0.15622 -0.23358,-0.32223 -0.3347,-0.49681 l 2.2e-4,-0.003 -16.31345,-28.19955 7.91527,-4.57915"
+     id="path344"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 564.71756,100.63732 -3.63149,-36.284678 4.54981,-0.45541 -4.30506,1.54103 -10.68604,-29.84298 8.60962,-3.08329 10.68604,29.84299 c 0.12895,0.35942 0.21003,0.72432 0.24658,1.08769 l -10e-4,-8.6e-4 3.63148,36.28468 -9.0996,0.910828"
+     id="path348"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 457.91255,267.52925 -29.44528,19.01164 c -0.003,0.003 -0.007,0.004 -0.009,0.006 l -0.001,4.9e-4 -33.26029,21.34446 -4.93958,-7.6957 33.25979,-21.34566 2.46919,3.84809 -2.47908,-3.84122 29.44529,-19.01164 4.95985,7.68316"
+     id="path352"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 314.96466,553.12251 -33.98198,-16.1415 c -0.20142,-0.0954 -0.3964,-0.20615 -0.58276,-0.33031 l 7.1e-4,-0.002 -30.94246,-20.73033 5.09012,-7.59683 30.94247,20.73034 -2.54592,3.79805 1.96267,-4.12957 33.98198,16.1415 -3.92483,8.26036"
+     id="path356"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 569.46053,219.81395 24.88927,29.26358 c 0.15773,0.18388 0.30102,0.38214 0.42828,0.59261 l 6.3e-4,0.003 17.37996,28.72425 -7.82438,4.73393 -17.37995,-28.72426 3.91212,-2.36693 -3.48322,2.96211 -24.88927,-29.26358 6.96656,-5.92428"
+     id="path360"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 269.52873,135.95108 20.92935,-30.42539 c 0.16063,-0.23518 0.34541,-0.45624 0.54925,-0.65828 l 0.002,-9.9e-4 26.20087,-25.921948 6.43211,6.50015 -26.20159,25.923648 -3.21544,-3.25032 3.76712,2.59104 -20.92935,30.42539 -7.53474,-5.1833"
+     id="path364"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 391.91568,381.66469 31.54358,-11.00103 1.50645,4.3171 -2.02242,-4.10161 30.44554,-15.00679 4.04314,8.2025 -30.44555,15.00679 c -0.0937,0.0469 -0.1902,0.0906 -0.28813,0.13068 -2.33703,0.95688 -5.00727,-0.16195 -5.96415,-2.49898 -0.95689,-2.33704 0.16194,-5.00728 2.49898,-5.96416 2.33703,-0.95688 5.00727,0.16195 5.96416,2.49898 0.84352,2.06017 0.0727,4.38042 -1.72304,5.55611 l -1.0033,0.49408 -31.54358,11.00103 -3.01168,-8.6347"
+     id="path368"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 492.65249,115.07675 -27.01529,24.48795 -3.07149,-3.38832 3.33215,3.13195 -25.67787,27.31998 -6.6643,-6.26391 25.67787,-27.31997 c 0.0822,-0.0887 0.1689,-0.17362 0.25945,-0.25587 l 0.002,7.1e-4 27.01651,-24.48844 6.14127,6.77592"
+     id="path372"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 519.85581,282.60105 15.15077,-31.94017 4.131,1.95926 -4.34075,-1.43716 12.83235,-38.76516 8.68185,2.87418 -12.8327,38.7653 c -0.0585,0.17782 -0.12961,0.35235 -0.20975,0.5221 v 0 l -15.15076,31.94016 -8.26201,-3.91851"
+     id="path376"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 567.32985,93.552472 -32.72738,4.99189 -0.68954,-4.5203 1.43447,4.34234 -30.48379,10.068778 -2.86845,-8.683468 30.48379,-10.06878 c 0.24752,-0.083 0.49668,-0.14265 0.74492,-0.18077 l -4.7e-4,0.002 32.72737,-4.99189 1.37908,9.04059"
+     id="path380"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 332.52448,69.106942 35.50204,-13.47305 c 0.28709,-0.10908 0.57831,-0.18738 0.86904,-0.23583 l -10e-4,4.9e-4 40.06826,-6.70303 1.50918,9.01979 -40.06825,6.70302 -0.75495,-4.50904 1.62328,4.27492 -35.50254,13.47184 -3.24485,-8.54911"
+     id="path384"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 180.59129,451.7719 -27.52109,13.07107 -1.96054,-4.12977 2.03835,4.09226 -25.48985,12.6982 -4.07842,-8.18523 25.48986,-12.6982 c 0.0256,-0.0133 0.0517,-0.0254 0.0766,-0.037 l 0.001,-5e-4 27.5211,-13.07107 3.92278,8.26025"
+     id="path388"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 236.27529,504.57771 -25.1805,-27.66204 c -0.15444,-0.16688 -0.29613,-0.34744 -0.42409,-0.53927 l 2.2e-4,-0.003 -21.24621,-31.88598 7.60948,-5.07086 21.24621,31.88598 -3.80389,2.53579 3.38123,-3.07847 25.18001,27.66084 -6.76246,6.15693"
+     id="path392"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 592.20557,396.94922 -28.04328,42.06106 c -0.0973,0.14854 -0.2058,0.29037 -0.32091,0.42644 l -10e-4,4.9e-4 -30.15769,35.44194 -6.96507,-5.92618 30.1577,-35.44194 3.48314,2.96285 -3.80405,-2.53641 28.04208,-42.06057 7.60929,5.07232"
+     id="path396"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 535.41629,236.18409 -33.13907,11.19691 -1.46314,-4.33202 1.76765,4.21722 -31.53093,13.21787 -3.5353,-8.43443 31.52972,-13.21738 c 0.0121,-0.005 0.0242,-0.01 0.0363,-0.0149 0.0895,-0.0366 0.17922,-0.0691 0.26825,-0.0999 v 0 l 33.13857,-11.19812 2.92798,8.66474"
+     id="path400"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 548.58477,183.38166 10.24035,-34.5459 4.38391,1.29949 -4.50062,-0.80843 6.15631,-34.27554 9.00112,1.61691 -6.15631,34.27555 c -0.0296,0.16599 -0.0685,0.33016 -0.11647,0.49096 l -1.2e-4,5e-5 -10.24036,34.5459 -8.76781,-2.59899"
+     id="path404"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 356.23307,398.32731 -7.23138,31.51539 -4.45627,-1.02282 4.54312,0.51434 -3.56102,31.48075 -9.08743,-1.02818 3.56101,-31.48076 c 0.0199,-0.17193 0.0479,-0.34149 0.0869,-0.50848 v 0 l 7.23138,-31.51539 8.91374,2.04515"
+     id="path408"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 620.02972,429.95774 -7.24846,-25.27473 4.39528,-1.26034 -3.69342,2.69525 -18.56694,-25.43884 7.38634,-5.39172 18.56743,25.43864 c 0.21343,0.29095 0.39497,0.61331 0.53852,0.96393 0.0639,0.15596 0.11876,0.31418 0.1642,0.47204 l -3.7e-4,1.5e-4 7.24798,25.27493 -8.79056,2.52069"
+     id="path412"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 617.10649,382.96469 32.6608,26.0604 c 0.0967,0.0762 0.19002,0.15654 0.27999,0.24111 l -1.1e-4,10e-4 27.47462,25.8263 -6.26318,6.66401 -27.47474,-25.82625 3.13171,-3.33206 -2.85172,3.57458 -32.66166,-26.06147 5.70429,-7.14808"
+     id="path416"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 433.37583,314.3929 29.37769,22.91825 c 0.0881,0.067 0.17362,0.13785 0.25526,0.21312 l 4.9e-4,10e-4 29.51344,26.7011 -6.13559,6.78117 -29.51343,-26.7011 3.06839,-3.39083 -2.81265,3.60516 -29.3789,-22.91775 5.6253,-7.21033"
+     id="path420"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel" />
+  <path
+     vector-effect="none"
+     fill-rule="nonzero"
+     d="m 750.25646,506.16103 24.01257,23.20535 c 0.0101,0.008 0.0199,0.0176 0.0292,0.0264 l -6e-5,0.002 17.18573,16.70885 -6.37477,6.55695 -17.18591,-16.70892 3.18744,-3.27836 -3.15827,3.30651 -24.01257,-23.20535 6.31665,-6.61306"
+     id="path424"
+     style="font-style:normal;font-weight:400;font-size:13px;font-family:'.AppleSystemUIFont';fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:1.30644;stroke-linecap:square;stroke-linejoin:bevel"
+     sodipodi:nodetypes="ccccccccccc" />
+  <metadata
+     id="metadata429">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Qt SVG Document</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
