@@ -110,7 +110,7 @@ $for(titlegraphic)$
 $endfor$}
 $endif$
 $if(logo)$
-\logo{\includegraphics{$logo$}}
+\renewcommand{\logographicpath}{$logo$}
 $endif$
 
 \begin{document}

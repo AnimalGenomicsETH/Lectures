@@ -1,5 +1,6 @@
 %<--- Settings for graphics --->%
 \usepackage{fancybox,letltxmacro}
+\usepackage{etoolbox}
 \usepackage[inkscapearea=nocrop,inkscapelatex=false]{svg}
 
 % save the meaning of \includegraphics
@@ -21,17 +22,18 @@
 }
 
 %<--- Settings for overall structure --->%
-\useoutertheme[subsection=false]{miniframes}
+\useoutertheme[subsection=true]{miniframes}
 
 \usepackage{microtype}
 \usepackage{fontspec}
-\IfFontExistsTF{DINNextW1G-Light}{%
+\IfFontExistsTF{DINNextW1G-Light_2379608958}{%
   \setsansfont[%
+      Path = {/Library/Fonts/Managed/},
       Extension     = .otf,
       Ligatures     = TeX,
-      BoldFont      = {DINNextW1G-Bold},
-      ItalicFont      = {DINNextW1G-LightItalic}
-  ]{DINNextW1G-Light}
+      BoldFont      = {DINNextW1G-Bold_1081134342},
+      ItalicFont      = {DINNextW1G-LightItalic_2894073562}
+  ]{DINNextW1G-Light_2379608958}
 }
 
 \linespread{1.1}
@@ -59,8 +61,51 @@
 \usepackage[style=iso]{datetime2}
 %\renewcommand{\dateseparator}{--}
 
-\AtBeginSection[]{}
-\AtBeginSubsection[]{}
+
+
+\makeatletter
+\let\beamer@writeslidentry@miniframeson=\beamer@writeslidentry
+\def\beamer@writeslidentry@miniframesoff{%
+  \expandafter\beamer@ifempty\expandafter{\beamer@framestartpage}{}% does not happen normally
+  {%else
+    % removed \addtocontents commands
+    \clearpage\beamer@notesactions%
+  }
+}
+\newcommand*{\miniframeson}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframeson}
+\newcommand*{\miniframesoff}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframesoff}
+\makeatother
+
+
+\usepackage{pgfmath}
+\newcounter{currentsection}
+
+\AtBeginSection[]{
+  \stepcounter{currentsection}%
+  \miniframesoff
+  \begin{frame}[noframenumbering,plain]
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\nolink{\color{ETH_Rot}\insertsection}\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+  \miniframeson
+}
+\AtBeginSubsection[]{
+}
+
+
+%%%
+\usepackage{totcount}
+\newcounter{totalsection}
+\regtotcounter{totalsection}
+\AtBeginDocument{%
+    \pretocmd{\section}{\refstepcounter{totalsection}}{\typeout{Yes, prepending was successful}}{\typeout{No, prepending was not it was successful}}%
+}%
+
+%%%
 
 \setbeamerfont{title}{size=\huge}
 \setbeamerfont{headline}{size=\scriptsize}
@@ -75,9 +120,32 @@
 %remove bg to see only in-frame
 \setbeamercolor*{mini frame}{fg=ETH_Purpur,bg=ETH_Grau}
 \setbeamercolor*{mini frame in section}{fg=ETH_Purpur,bg=ETH_Grau}
+%\setbeamercolor*{mini frame in subsection}{fg=ETH_Purpur,bg=ETH_Grau}
 
 \setbeamertemplate{section in head/foot}{\color{ETH_Purpur}\insertsectionhead}
 \setbeamertemplate{section in head/foot shaded}{\color{ETH_Grau}\insertsectionhead}
+
+
+
+%override this afterwards as it is not good
+\setbeamertemplate{subsection in head/foot}{
+  \leavevmode%
+  \pgfmathsetmacro{\sectionpercent}{(\value{currentsection}-1)/(\number\totvalue{totalsection})}%
+  \pgfmathsetmacro{\sectionpos}{\sectionpercent*\paperwidth}%
+  \hbox{%
+  \hskip \sectionpos pt%
+  \color{ETH_Purpur}\nolink{\insertsubsectionhead}}
+}
+
+\setbeamertemplate{subsection in head/foot}{\color{ETH_Purpur}\nolink{\insertsubsectionhead}}
+
+
+\setbeamercolor{below lower separation line head}{bg=ETH_Grau}
+\addtobeamertemplate{headline}{}{%
+  \begin{beamercolorbox}[colsep=0.25pt]{below lower separation line head}
+  \end{beamercolorbox}
+}
+
 
 \setbeamertemplate{itemize item}{\Large$\circ$}
 \setbeamertemplate{itemize subitem}{\raisebox{0.3ex}{\footnotesize$\triangleright$}}
@@ -88,9 +156,10 @@
 \setbeamercolor{subsection in toc}{fg=ETH_Grau}
 %\setbeamerfont{subsection in toc}{size=\small}
 
+\providecommand{\logographicpath}{}
 \setbeamertemplate{title page}{
   \vbox{}
-  \latexincludegraphics[width=0.25\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\latexincludegraphics[width=0.25\textwidth]{svg-inkscape/SNSF.pdf}
+  \begin{minipage}[c][][t]{.25\textwidth}\latexincludegraphics[width=\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\end{minipage}\hfill\begin{minipage}[c][][t]{.25\textwidth}\hfill\ifdefempty{\logographicpath}{}{\latexincludegraphics[width=0.6\textwidth]{\logographicpath}}\end{minipage}
   \vfill
   \vfill
   \begingroup
