@@ -157,9 +157,10 @@
 %\setbeamerfont{subsection in toc}{size=\small}
 
 \providecommand{\logographicpath}{}
+\providecommand{\logographicsize}{0.6\textwidth}
 \setbeamertemplate{title page}{
   \vbox{}
-  \begin{minipage}[c][][t]{.25\textwidth}\latexincludegraphics[width=\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\end{minipage}\hfill\begin{minipage}[c][][t]{.25\textwidth}\hfill\ifdefempty{\logographicpath}{}{\latexincludegraphics[width=0.6\textwidth]{\logographicpath}}\end{minipage}
+  \begin{minipage}[l][][t]{.25\textwidth}\latexincludegraphics[width=\textwidth]{svg-inkscape/eth_logo_kurz_pos.pdf}\hfill\end{minipage}\hfill\begin{minipage}[r][][t]{.25\textwidth}\hfill\ifdefempty{\logographicpath}{}{\latexincludegraphics[width=\logographicsize]{\logographicpath}}\end{minipage}
   \vfill
   \vfill
   \begingroup
@@ -196,7 +197,7 @@
 
 \AtBeginEnvironment{frame}{\setcounter{footnote}{0}}
 
-\renewcommand<>{\alert}[1]{\begin{alertenv}\underline{#2#1}\end{alertenv}}
+\renewcommand<>{\alert}[1]{\begin{alertenv}\textbf{\color{ETH_Rot}{\underline{#2#1}}}\end{alertenv}}
 %\setbeamercolor{alerted text}{fg=ETH_Rot}
 
 %<--- Settings for code/quotes --->%
@@ -209,7 +210,9 @@
 }
 
 \usepackage[none]{hyphenat}%%%%
-\renewenvironment{quote}{\tcolorbox[fontupper=\footnotesize,hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colframe=ETH_Purpur]}{\endtcolorbox}
+\renewenvironment{quote}{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colframe=ETH_Purpur]}{\endtcolorbox}
+\renewenvironment{exampleblock}[1][]{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colbacktitle=ETH_Blau!50!white, colframe=ETH_Blau]}{\endtcolorbox}
+\newenvironment{definitionblock}[1][]{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colbacktitle=ETH_Bronze!50!white,colframe=ETH_Bronze,title=#1]}{\endtcolorbox}
 
 \tcbset{%
     noparskip,

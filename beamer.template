@@ -101,7 +101,7 @@ $endif$
 \author$if(shortauthor)$[$shortauthor$]$endif${$for(author)$$author$$sep$, \and $endfor$}
 \date$if(shortdate)$[$shortdate$]$endif${$date$}
 $if(institute)$
-\institute$if(shortinstitute)$[$shortinstitute$]$endif${$for(institute)$$institute$$sep$ \and $endfor$}
+\institute$if(shortinstitute)$[$shortinstitute$]$endif${$for(institute)$$institute$$sep$\vspace{-1em} \and $endfor$}
 $endif$
 $if(titlegraphic)$
 \titlegraphic{
@@ -111,6 +111,9 @@ $endfor$}
 $endif$
 $if(logo)$
 \renewcommand{\logographicpath}{$logo$}
+$endif$
+$if(logo_size)$
+\renewcommand{\logographicsize}{$logo_size$\textwidth}
 $endif$
 
 \begin{document}
