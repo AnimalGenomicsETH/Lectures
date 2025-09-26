@@ -3,6 +3,13 @@
 \usepackage{etoolbox}
 \usepackage[inkscapearea=nocrop,inkscapelatex=false]{svg}
 
+%Bib
+\usepackage[backend=biber,style=science,articletitle=true]{biblatex}
+\bibliography{bibliography}
+
+
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
 % save the meaning of \includegraphics
 \NewCommandCopy\latexincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{%
@@ -77,11 +84,8 @@
 \makeatother
 
 
-\usepackage{pgfmath}
-\newcounter{currentsection}
 
 \AtBeginSection[]{
-  \stepcounter{currentsection}%
   \miniframesoff
   \begin{frame}[noframenumbering,plain]
   \vfill
@@ -96,16 +100,20 @@
 \AtBeginSubsection[]{
 }
 
+\setbeamercolor{bibliography entry author}{fg=ETH_Bronze}
+%\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=ETH_Bronze}
+\setbeamercolor{bibliography entry note}{fg=ETH_Bronze}
 
-%%%
-\usepackage{totcount}
-\newcounter{totalsection}
-\regtotcounter{totalsection}
-\AtBeginDocument{%
-    \pretocmd{\section}{\refstepcounter{totalsection}}{\typeout{Yes, prepending was successful}}{\typeout{No, prepending was not it was successful}}%
-}%
+% Copy the original footfullcite command
+\NewCommandCopy{\originalfootfullcite}{\footfullcite}
+\renewcommand{\footfullcite}[1]{\footnote{\tiny \fullcite{#1}}}
+%\renewcommand{\footfullcite}[1]{\footnote{\tiny\originalfootfullcite{#1}}}
+% Redefine footfullcite to use tiny font inside the footnote
+%\renewcommand{\footfullcite}[1]{%
+%  \footnote{\tiny\originalfootfullcite{#1}}%
+%}
 
-%%%
 
 \setbeamerfont{title}{size=\huge}
 \setbeamerfont{headline}{size=\scriptsize}
@@ -125,17 +133,6 @@
 \setbeamertemplate{section in head/foot}{\color{ETH_Purpur}\insertsectionhead}
 \setbeamertemplate{section in head/foot shaded}{\color{ETH_Grau}\insertsectionhead}
 
-
-
-%override this afterwards as it is not good
-\setbeamertemplate{subsection in head/foot}{
-  \leavevmode%
-  \pgfmathsetmacro{\sectionpercent}{(\value{currentsection}-1)/(\number\totvalue{totalsection})}%
-  \pgfmathsetmacro{\sectionpos}{\sectionpercent*\paperwidth}%
-  \hbox{%
-  \hskip \sectionpos pt%
-  \color{ETH_Purpur}\nolink{\insertsubsectionhead}}
-}
 
 \setbeamertemplate{subsection in head/foot}{\color{ETH_Purpur}\nolink{\insertsubsectionhead}}
 
@@ -210,9 +207,9 @@
 }
 
 \usepackage[none]{hyphenat}%%%%
-\renewenvironment{quote}{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colframe=ETH_Purpur]}{\endtcolorbox}
-\renewenvironment{exampleblock}[1][]{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colbacktitle=ETH_Blau!50!white, colframe=ETH_Blau]}{\endtcolorbox}
-\newenvironment{definitionblock}[1][]{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Petrol!5!white, colbacktitle=ETH_Bronze!50!white,colframe=ETH_Bronze,title=#1]}{\endtcolorbox}
+\renewenvironment{quote}{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Purpur!10!white, colframe=ETH_Purpur]}{\endtcolorbox}
+\renewenvironment{exampleblock}[1][]{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,colback=ETH_Grun!10!white, colbacktitle=ETH_Grun!40!white, colframe=ETH_Grun]}{\endtcolorbox}
+\newenvironment{definitionblock}[1][]{\tcolorbox[fontupper=\footnotesize,capture=hbox,tcbox width=auto limited,top=0pt,bottom=0pt,colback=ETH_Petrol!10!white, colbacktitle=ETH_Petrol!40!white,colframe=ETH_Petrol,title=#1]}{\endtcolorbox}
 
 \tcbset{%
     noparskip,
@@ -258,8 +255,8 @@
     basicstyle=\ttfamily\color{black},
     commentstyle=\sffamily\color{ETH_Grau},
     numberstyle=\tiny,
-    backgroundcolor=\color{ETH_Bronze!5},
+    backgroundcolor=\color{ETH_Grau!10},
     frameround=tttt,
     frame=single,
-    rulecolor=\color{ETH_Grun},
+    rulecolor=\color{ETH_Grau},
 }

@@ -21,7 +21,6 @@ $endfor$
 $if(geometry)$
 \geometry{$for(geometry)$$geometry$$sep$,$endfor$}
 $endif$
-\newif\ifbibliography
 $if(background-image)$
 \usebackgroundtemplate{%
   \includegraphics[width=\paperwidth]{$background-image$}%

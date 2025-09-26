@@ -2,7 +2,21 @@
 svg-inkscape
 scratch
 .ipynb_checkpoints
+
 *.pdf
+*.tex
+*.aux
+*.bcf
+*.log
+*.run.xml
+*.tex.bbl
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+*.tex.blg
+*.vrb
 
 *.svg
 *.png
