@@ -3,12 +3,11 @@
 \usepackage{etoolbox}
 \usepackage[inkscapearea=nocrop,inkscapelatex=false]{svg}
 
+%\setbeamercovered{transparent}
+
 %Bib
 \usepackage[backend=biber,style=science,articletitle=true]{biblatex}
 \bibliography{bibliography}
-
-
-\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
 
 % save the meaning of \includegraphics
 \NewCommandCopy\latexincludegraphics\includegraphics
@@ -105,9 +104,19 @@
 \setbeamercolor{bibliography entry location}{fg=ETH_Bronze}
 \setbeamercolor{bibliography entry note}{fg=ETH_Bronze}
 
+\renewcommand\footnoterule{}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
 % Copy the original footfullcite command
 \NewCommandCopy{\originalfootfullcite}{\footfullcite}
-\renewcommand{\footfullcite}[1]{\footnote{\tiny \fullcite{#1}}}
+%\renewcommand{\footfullcite}[1]{\footnote{\tiny \fullcite{#1}}}
+
+\RenewDocumentCommand{\footfullcite}{ d<> m }{%
+  \IfNoValueTF{#1}
+    {\footnote{\tiny \fullcite{#2}}}
+    {\footnote<#1>{\tiny \fullcite{#2}}}%
+}
+
 %\renewcommand{\footfullcite}[1]{\footnote{\tiny\originalfootfullcite{#1}}}
 % Redefine footfullcite to use tiny font inside the footnote
 %\renewcommand{\footfullcite}[1]{%
