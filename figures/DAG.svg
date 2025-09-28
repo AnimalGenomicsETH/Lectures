@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="167.25613mm"
-   height="55.697563mm"
-   viewBox="0 0 474.11167 157.88298"
+   width="167.25612mm"
+   height="55.685848mm"
+   viewBox="0 0 474.11163 157.84977"
    version="1.2"
    id="svg59"
    sodipodi:docname="DAG.svg"
-   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,8 @@
      inkscape:window-x="1440"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5" />
+     inkscape:current-layer="layer6"
+     showgrid="false" />
   <title
      id="title1">Qt SVG Document</title>
   <desc
@@ -136,7 +137,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="1"
-     transform="translate(62.56405,150.71304)"
+     transform="translate(62.563996,150.69644)"
      style="display:inline">
     <g
        id="g3"
@@ -211,12 +212,12 @@
          sodipodi:nodetypes="cccc" />
       <text
          xml:space="preserve"
-         style="font-weight:bold;font-size:13.6643px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.375813"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.6643px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.375813"
          x="-93.291733"
          y="-7.9139266"
          id="text60-6-1"><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.375813"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.375813"
            x="-93.291733"
            y="-7.9139266"
            id="tspan7">e.g., tandem repeats</tspan></text>
@@ -226,7 +227,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="2"
-     transform="translate(62.56405,150.71304)">
+     transform="translate(62.563996,150.69644)">
     <path
        vector-effect="none"
        fill-rule="evenodd"
@@ -327,24 +328,24 @@
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:17.4524px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.480001"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:17.4524px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.480001"
        x="71.345695"
        y="-98.704201"
        id="text60"><tspan
          sodipodi:role="line"
          id="tspan60"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.480001"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.480001"
          x="71.345695"
          y="-98.704201">DAG</tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:17.4524px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.480001"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:17.4524px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.480001"
        x="36.720116"
        y="-14.305885"
        id="text60-6"><tspan
          sodipodi:role="line"
          id="tspan60-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.480001"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.480001"
          x="36.720116"
          y="-14.305885">non-DAG</tspan></text>
     <path
@@ -366,131 +367,131 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="3"
-     transform="translate(62.56405,150.71304)"
+     transform="translate(62.563996,150.69644)"
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="282.84525"
        y="-139.24052"
        id="text60-3-2"><tspan
          sodipodi:role="line"
          id="tspan60-7-4"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="282.84525"
          y="-139.24052">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9">=1</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="213.92639"
        y="-139.26331"
        id="text60-3-2-8"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="213.92639"
          y="-139.26331">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9-0">=2</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="131.32773"
        y="-110.2735"
        id="text60-3-2-8-7"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="131.32773"
          y="-110.2735">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9-0-2">=3</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="374.92532"
        y="-110.2735"
        id="text60-3-2-8-7-3"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8-9"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="374.92532"
          y="-110.2735">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9-0-2-6">=3</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="177.91907"
        y="-25.830704"
        id="text60-3-2-8-7-4"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8-0"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="177.91907"
          y="-25.830704">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9-0-2-8">=3</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="343.67749"
        y="-25.830704"
        id="text60-3-2-8-7-0"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8-6"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="343.67749"
          y="-25.830704">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9-0-2-0">=3</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="259.40579"
        y="-69.845024"
        id="text60-3-2-8-7-2"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8-98"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="259.40579"
          y="-69.845024">f<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan9-0-2-1">=?</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="4"
-     transform="translate(62.56405,150.71304)"
+     transform="translate(62.563996,150.69644)"
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="238.03911"
        y="-72.851997"
        id="text60-3-2-8-7-0-6"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8-6-1"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="238.03911"
          y="-72.851997">d<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan10">=100bp</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:16.5698px;line-height:1.25;font-family:Calibri, Calibri_MSFontService, sans-serif;-inkscape-font-specification:'Calibri, Calibri_MSFontService, sans-serif, Bold';stroke-width:0.455724"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.5698px;line-height:1.25;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
        x="255.24899"
        y="6.9876642"
        id="text60-3-2-8-7-0-6-6"><tspan
          sodipodi:role="line"
          id="tspan60-7-4-1-8-6-1-9"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.455724"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
          x="255.24899"
          y="6.9876642">d<tspan
-   style="font-style:normal;stroke-width:0.455724"
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.455724"
    id="tspan10-0">=?</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.750001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

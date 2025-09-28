@@ -17,6 +17,8 @@ scratch
 *.snm
 *.tex.blg
 *.vrb
+%.fls
+*.fdb_latexmk
 
 *.svg
 *.png

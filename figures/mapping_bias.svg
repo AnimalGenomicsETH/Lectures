@@ -7,7 +7,7 @@
    viewBox="0 0 325.52374 133.15092"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
    sodipodi:docname="mapping_bias.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -419,7 +419,7 @@
        y="36.75647"
        id="text3-1-6-3-1"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.191323"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.191323"
          x="-144.53288"
          y="36.75647"
          id="tspan4-4-2-8-4">Indicine reference</tspan></text>
@@ -431,7 +431,7 @@
        id="text3-1-6-3-1-5"
        transform="translate(-144.91388,16.069799)"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.191323"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.191323"
          x="0.81228906"
          y="58.502861"
          id="tspan4-4-2-8-4-9">Taurine reference</tspan></text>
@@ -442,7 +442,7 @@
        y="113.23531"
        id="text3-1-6-3-1-1"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G';stroke-width:0.191323"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'DIN Next W1G';-inkscape-font-specification:'DIN Next W1G Light';stroke-width:0.191323"
          x="-144.27866"
          y="113.23531"
          id="tspan4-4-2-8-4-7">Query sample</tspan></text>
